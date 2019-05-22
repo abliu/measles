@@ -1,0 +1,79 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+```{r}
+# Install scripts and source packages
+# install.packages("devtools")
+# library(devtools)
+# devtools::install_github("kingaa/pomp")
+# devtools::install_github("krlmlr/here")
+# install.packages("tidyverse")
+library(pomp2)
+library(here)
+library(dplyr)
+library(ggplot2)
+```
+
+```{r}
+# Load data
+# TODO: do we check the data sources? Where are they coming from?
+dzzDataFile <- here::here("cities", "Brazil", "all data.csv")
+brazil_measles <- data.frame(read.csv(dzzDataFile,header=TRUE)) %>%
+  filter(dzz == "measles" & gender == "both" & year %in% 1979:1995) %>%
+  mutate(measles0_9 = under1 + one_4 + five_9)
+brazil_population = data.frame(read.csv(
+  here::here("cities","Brazil populations.csv"),header=TRUE)) %>%
+  filter(location == "Brazil" & gender == "both" & year %in% 1979:1995) %>%
+  mutate(pop0_9 = X0_4 + X5_9) # TODO: check if this sum is right
+# given that 0_1 + 1_4 does not equal 0_4
+```
+
+```{r}
+# Define POMP model
+sir_step <- function (S, I, R, H, N, delta.t, Beta, gamma, ...) {
+  dN_SI <- rbinom(n=1,size=S,prob=1-exp(-Beta*I/N*delta.t))
+  dN_IR <- rbinom(n=1,size=I,prob=1-exp(-gamma*delta.t))
+  S <- S - dN_SI
+  I <- I + dN_SI - dN_IR
+  R <- R + dN_IR
+  H <- H + dN_IR;
+  c(S = S, I = I, R = R, H = H)
+}
+sir_init <- function (N, ...) {
+  c(S = N-1, I = 1, R = 0, H = 0)
+}
+dmeas <- function (measles0_9, H, rho, log, ...) {
+  dbinom(x=measles0_9, size=H, prob=rho, log=log)
+}
+rmeas <- function (H, rho, ...) {
+  c(measles0_9=rbinom(n=1, size=H, prob=rho))
+}
+brazil_measles %>%
+  pomp(times = "year", t0 = 1978, rprocess=euler(sir_step,delta.t=1/365),
+       rinit=sir_init, accumvars = "H", rmeasure=rmeas,dmeasure=dmeas) -> sir
+```
+
+```{r}
+# Run and plot simulation
+# Estimate gamma based on infectious period of measles estimated at 6-7 days:
+# "Measles virus is shed from the nasopharynx beginning with the prodrome until
+# 3–4 days after rash onset. The incubation period of measles, from exposure to
+# prodrome, averages 10–12 days. From exposure to rash onset averages 14 days
+# (range, 7–21 days)." Then 1/gamma is about 1/52 of a year, or gamma=52.
+# beta = gamma * R_0 = 52 * 15 = 780.
+# https://www.cdc.gov/vaccines/pubs/pinkbook/downloads/meas.pdf
+sir %>%
+  # simulate(params=c(Beta=1.5,gamma=1,rho=0.9,N=2600),
+  simulate(params=c(Beta=780,gamma=52,rho=0.0001,
+                    N=floor(mean(brazil_population$pop0_9))),
+           # can make N adj w/ time
+           # change nsim back to 20
+           nsim=1,format="data.frame",include.data=TRUE,
+           seed = 96) -> sims
+sims %>%
+  ggplot(aes(x=year,y=measles0_9,group=.id,color=.id=="data"))+
+  geom_line()+
+  guides(color=FALSE)
+```
