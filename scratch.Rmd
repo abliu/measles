@@ -77,3 +77,5 @@ sims %>%
   geom_line()+
   guides(color=FALSE)
 ```
+
+The teal line above is the actual measles incidence data; the red is the incidence curve of one simulation of the SIR model.
