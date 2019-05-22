@@ -1,0 +1,1072 @@
+"","city","dzz","gender","year","under1","one_4","five_9","ten_14"
+"1","Brazil","acute bronchitis","female","1979",2,76,7,640
+"2","Brazil","acute bronchitis","female","1980",3,50,2,560
+"3","Brazil","acute bronchitis","female","1981",2,58,3,487
+"4","Brazil","acute bronchitis","female","1982",1,37,2,459
+"5","Brazil","acute bronchitis","female","1983",0,48,5,358
+"6","Brazil","acute bronchitis","female","1984",2,30,3,301
+"7","Brazil","acute bronchitis","female","1985",2,40,3,285
+"8","Brazil","acute bronchitis","female","1986",3,30,1,239
+"9","Brazil","acute bronchitis","female","1987",4,24,1,221
+"10","Brazil","acute bronchitis","female","1988",1,27,5,271
+"11","Brazil","acute bronchitis","female","1989",2,26,3,222
+"12","Brazil","acute bronchitis","female","1990",0,31,2,256
+"13","Brazil","acute bronchitis","female","1991",1,13,1,164
+"14","Brazil","acute bronchitis","female","1992",0,9,0,199
+"15","Brazil","acute bronchitis","female","1993",2,16,2,207
+"16","Brazil","acute bronchitis","female","1994",0,12,1,170
+"17","Brazil","acute bronchitis","female","1995",2,18,1,189
+"18","Brazil","acute bronchitis","male","1979",2,73,5,793
+"19","Brazil","acute bronchitis","male","1980",0,48,4,702
+"20","Brazil","acute bronchitis","male","1981",3,60,3,684
+"21","Brazil","acute bronchitis","male","1982",2,52,3,618
+"22","Brazil","acute bronchitis","male","1983",1,35,1,458
+"23","Brazil","acute bronchitis","male","1984",1,32,3,423
+"24","Brazil","acute bronchitis","male","1985",0,30,1,365
+"25","Brazil","acute bronchitis","male","1986",1,28,3,371
+"26","Brazil","acute bronchitis","male","1987",2,31,3,297
+"27","Brazil","acute bronchitis","male","1988",4,19,1,349
+"28","Brazil","acute bronchitis","male","1989",3,17,1,271
+"29","Brazil","acute bronchitis","male","1990",6,21,1,324
+"30","Brazil","acute bronchitis","male","1991",0,22,1,215
+"31","Brazil","acute bronchitis","male","1992",3,20,0,226
+"32","Brazil","acute bronchitis","male","1993",1,18,3,238
+"33","Brazil","acute bronchitis","male","1994",3,20,2,217
+"34","Brazil","acute bronchitis","male","1995",2,14,1,199
+"35","Brazil","asthma","female","1979",53,171,13,131
+"36","Brazil","asthma","female","1980",48,162,21,121
+"37","Brazil","asthma","female","1981",45,146,13,112
+"38","Brazil","asthma","female","1982",50,162,12,123
+"39","Brazil","asthma","female","1983",48,158,12,112
+"40","Brazil","asthma","female","1984",47,154,10,108
+"41","Brazil","asthma","female","1985",43,148,17,98
+"42","Brazil","asthma","female","1986",44,124,17,81
+"43","Brazil","asthma","female","1987",41,114,17,77
+"44","Brazil","asthma","female","1988",43,132,20,68
+"45","Brazil","asthma","female","1989",48,86,13,70
+"46","Brazil","asthma","female","1990",49,113,17,63
+"47","Brazil","asthma","female","1991",28,92,19,61
+"48","Brazil","asthma","female","1992",40,106,24,74
+"49","Brazil","asthma","female","1993",46,86,12,46
+"50","Brazil","asthma","female","1994",43,110,21,45
+"51","Brazil","asthma","female","1995",42,97,16,47
+"52","Brazil","asthma","male","1979",23,151,13,169
+"53","Brazil","asthma","male","1980",22,151,15,161
+"54","Brazil","asthma","male","1981",29,125,12,145
+"55","Brazil","asthma","male","1982",25,127,17,179
+"56","Brazil","asthma","male","1983",31,139,18,147
+"57","Brazil","asthma","male","1984",26,99,23,141
+"58","Brazil","asthma","male","1985",29,113,15,107
+"59","Brazil","asthma","male","1986",22,94,12,107
+"60","Brazil","asthma","male","1987",39,101,13,88
+"61","Brazil","asthma","male","1988",29,99,23,102
+"62","Brazil","asthma","male","1989",27,117,13,90
+"63","Brazil","asthma","male","1990",30,99,10,116
+"64","Brazil","asthma","male","1991",25,90,7,61
+"65","Brazil","asthma","male","1992",29,94,14,78
+"66","Brazil","asthma","male","1993",24,96,10,80
+"67","Brazil","asthma","male","1994",30,100,24,74
+"68","Brazil","asthma","male","1995",38,98,13,88
+"69","Brazil","bacterial mening","female","1979",58,153,37,518
+"70","Brazil","bacterial mening","female","1980",49,120,41,473
+"71","Brazil","bacterial mening","female","1981",48,130,34,457
+"72","Brazil","bacterial mening","female","1982",46,104,37,488
+"73","Brazil","bacterial mening","female","1983",42,118,25,443
+"74","Brazil","bacterial mening","female","1984",41,145,29,421
+"75","Brazil","bacterial mening","female","1985",43,122,34,376
+"76","Brazil","bacterial mening","female","1986",48,129,48,371
+"77","Brazil","bacterial mening","female","1987",46,102,29,343
+"78","Brazil","bacterial mening","female","1988",44,108,22,328
+"79","Brazil","bacterial mening","female","1989",46,126,44,323
+"80","Brazil","bacterial mening","female","1990",44,113,44,275
+"81","Brazil","bacterial mening","female","1991",43,135,31,293
+"82","Brazil","bacterial mening","female","1992",36,135,27,294
+"83","Brazil","bacterial mening","female","1993",34,105,30,293
+"84","Brazil","bacterial mening","female","1994",41,101,30,290
+"85","Brazil","bacterial mening","female","1995",47,91,15,274
+"86","Brazil","bacterial mening","male","1979",65,147,62,705
+"87","Brazil","bacterial mening","male","1980",72,131,45,656
+"88","Brazil","bacterial mening","male","1981",62,150,43,625
+"89","Brazil","bacterial mening","male","1982",61,147,36,666
+"90","Brazil","bacterial mening","male","1983",70,153,53,617
+"91","Brazil","bacterial mening","male","1984",84,172,38,627
+"92","Brazil","bacterial mening","male","1985",63,144,48,549
+"93","Brazil","bacterial mening","male","1986",85,153,48,526
+"94","Brazil","bacterial mening","male","1987",84,151,45,459
+"95","Brazil","bacterial mening","male","1988",74,137,44,462
+"96","Brazil","bacterial mening","male","1989",94,179,57,482
+"97","Brazil","bacterial mening","male","1990",60,171,32,425
+"98","Brazil","bacterial mening","male","1991",55,155,27,440
+"99","Brazil","bacterial mening","male","1992",64,139,28,427
+"100","Brazil","bacterial mening","male","1993",86,143,31,416
+"101","Brazil","bacterial mening","male","1994",69,155,37,391
+"102","Brazil","bacterial mening","male","1995",75,154,36,348
+"103","Brazil","bronchiectasis","female","1979",5,1,1,4
+"104","Brazil","bronchiectasis","female","1980",4,0,0,6
+"105","Brazil","bronchiectasis","female","1981",5,0,1,2
+"106","Brazil","bronchiectasis","female","1982",4,2,2,0
+"107","Brazil","bronchiectasis","female","1983",3,1,2,0
+"108","Brazil","bronchiectasis","female","1984",5,1,2,2
+"109","Brazil","bronchiectasis","female","1985",3,1,0,2
+"110","Brazil","bronchiectasis","female","1986",5,2,1,0
+"111","Brazil","bronchiectasis","female","1987",3,1,0,0
+"112","Brazil","bronchiectasis","female","1988",7,0,0,0
+"113","Brazil","bronchiectasis","female","1989",4,0,0,4
+"114","Brazil","bronchiectasis","female","1990",5,1,0,0
+"115","Brazil","bronchiectasis","female","1991",4,1,3,0
+"116","Brazil","bronchiectasis","female","1992",5,0,0,0
+"117","Brazil","bronchiectasis","female","1993",6,0,2,4
+"118","Brazil","bronchiectasis","female","1994",1,1,1,0
+"119","Brazil","bronchiectasis","female","1995",5,2,0,0
+"120","Brazil","bronchiectasis","male","1979",8,4,3,1
+"121","Brazil","bronchiectasis","male","1980",5,3,0,4
+"122","Brazil","bronchiectasis","male","1981",7,0,2,4
+"123","Brazil","bronchiectasis","male","1982",6,1,3,1
+"124","Brazil","bronchiectasis","male","1983",1,3,0,1
+"125","Brazil","bronchiectasis","male","1984",2,4,0,1
+"126","Brazil","bronchiectasis","male","1985",8,1,2,3
+"127","Brazil","bronchiectasis","male","1986",3,0,1,0
+"128","Brazil","bronchiectasis","male","1987",9,1,1,3
+"129","Brazil","bronchiectasis","male","1988",9,1,4,0
+"130","Brazil","bronchiectasis","male","1989",9,0,0,3
+"131","Brazil","bronchiectasis","male","1990",1,2,0,3
+"132","Brazil","bronchiectasis","male","1991",7,1,2,1
+"133","Brazil","bronchiectasis","male","1992",3,0,1,0
+"134","Brazil","bronchiectasis","male","1993",4,2,1,2
+"135","Brazil","bronchiectasis","male","1994",9,1,1,3
+"136","Brazil","bronchiectasis","male","1995",3,1,0,0
+"137","Brazil","bronchitis unsp","female","1979",0,24,0,80
+"138","Brazil","bronchitis unsp","female","1980",2,21,1,38
+"139","Brazil","bronchitis unsp","female","1981",1,21,4,46
+"140","Brazil","bronchitis unsp","female","1982",0,23,0,38
+"141","Brazil","bronchitis unsp","female","1983",1,16,3,50
+"142","Brazil","bronchitis unsp","female","1984",0,16,2,41
+"143","Brazil","bronchitis unsp","female","1985",0,20,2,37
+"144","Brazil","bronchitis unsp","female","1986",0,14,1,26
+"145","Brazil","bronchitis unsp","female","1987",1,14,0,32
+"146","Brazil","bronchitis unsp","female","1988",1,15,4,29
+"147","Brazil","bronchitis unsp","female","1989",2,17,2,33
+"148","Brazil","bronchitis unsp","female","1990",0,13,2,32
+"149","Brazil","bronchitis unsp","female","1991",0,4,1,13
+"150","Brazil","bronchitis unsp","female","1992",0,10,1,23
+"151","Brazil","bronchitis unsp","female","1993",2,11,3,25
+"152","Brazil","bronchitis unsp","female","1994",3,10,2,15
+"153","Brazil","bronchitis unsp","female","1995",1,6,1,17
+"154","Brazil","bronchitis unsp","male","1979",1,29,1,79
+"155","Brazil","bronchitis unsp","male","1980",2,22,1,67
+"156","Brazil","bronchitis unsp","male","1981",1,17,2,59
+"157","Brazil","bronchitis unsp","male","1982",0,16,2,52
+"158","Brazil","bronchitis unsp","male","1983",0,26,1,61
+"159","Brazil","bronchitis unsp","male","1984",1,29,3,44
+"160","Brazil","bronchitis unsp","male","1985",4,19,4,43
+"161","Brazil","bronchitis unsp","male","1986",0,13,0,35
+"162","Brazil","bronchitis unsp","male","1987",0,16,2,31
+"163","Brazil","bronchitis unsp","male","1988",2,16,1,46
+"164","Brazil","bronchitis unsp","male","1989",0,17,0,52
+"165","Brazil","bronchitis unsp","male","1990",1,11,4,53
+"166","Brazil","bronchitis unsp","male","1991",1,7,1,28
+"167","Brazil","bronchitis unsp","male","1992",2,13,3,35
+"168","Brazil","bronchitis unsp","male","1993",4,11,0,35
+"169","Brazil","bronchitis unsp","male","1994",5,19,3,28
+"170","Brazil","bronchitis unsp","male","1995",3,10,4,21
+"171","Brazil","bronchopneumonia","female","1979",191,1539,183,5882
+"172","Brazil","bronchopneumonia","female","1980",188,1506,164,5730
+"173","Brazil","bronchopneumonia","female","1981",181,1302,168,5684
+"174","Brazil","bronchopneumonia","female","1982",166,1201,143,5617
+"175","Brazil","bronchopneumonia","female","1983",174,1133,145,4502
+"176","Brazil","bronchopneumonia","female","1984",201,1219,151,4464
+"177","Brazil","bronchopneumonia","female","1985",170,970,122,3642
+"178","Brazil","bronchopneumonia","female","1986",196,980,134,3662
+"179","Brazil","bronchopneumonia","female","1987",188,712,114,3035
+"180","Brazil","bronchopneumonia","female","1988",212,714,128,2992
+"181","Brazil","bronchopneumonia","female","1989",197,651,98,2592
+"182","Brazil","bronchopneumonia","female","1990",151,562,104,2393
+"183","Brazil","bronchopneumonia","female","1991",155,482,68,1850
+"184","Brazil","bronchopneumonia","female","1992",166,510,69,1909
+"185","Brazil","bronchopneumonia","female","1993",203,524,90,1959
+"186","Brazil","bronchopneumonia","female","1994",204,469,68,1696
+"187","Brazil","bronchopneumonia","female","1995",174,474,81,1595
+"188","Brazil","bronchopneumonia","male","1979",241,1542,201,7643
+"189","Brazil","bronchopneumonia","male","1980",249,1497,182,7237
+"190","Brazil","bronchopneumonia","male","1981",259,1343,197,7505
+"191","Brazil","bronchopneumonia","male","1982",226,1253,156,7439
+"192","Brazil","bronchopneumonia","male","1983",246,1160,178,5943
+"193","Brazil","bronchopneumonia","male","1984",266,1295,159,5911
+"194","Brazil","bronchopneumonia","male","1985",241,986,151,4816
+"195","Brazil","bronchopneumonia","male","1986",314,1009,154,4749
+"196","Brazil","bronchopneumonia","male","1987",310,756,123,3869
+"197","Brazil","bronchopneumonia","male","1988",341,816,139,3976
+"198","Brazil","bronchopneumonia","male","1989",309,714,128,3336
+"199","Brazil","bronchopneumonia","male","1990",346,691,131,3043
+"200","Brazil","bronchopneumonia","male","1991",316,534,70,2364
+"201","Brazil","bronchopneumonia","male","1992",385,551,77,2548
+"202","Brazil","bronchopneumonia","male","1993",388,586,102,2449
+"203","Brazil","bronchopneumonia","male","1994",399,520,89,2322
+"204","Brazil","bronchopneumonia","male","1995",338,467,84,2010
+"205","Brazil","chronic bronchitis","female","1979",11,12,1,13
+"206","Brazil","chronic bronchitis","female","1980",8,10,3,16
+"207","Brazil","chronic bronchitis","female","1981",5,7,3,19
+"208","Brazil","chronic bronchitis","female","1982",5,6,1,11
+"209","Brazil","chronic bronchitis","female","1983",13,8,2,7
+"210","Brazil","chronic bronchitis","female","1984",13,6,3,14
+"211","Brazil","chronic bronchitis","female","1985",3,12,1,12
+"212","Brazil","chronic bronchitis","female","1986",12,19,2,8
+"213","Brazil","chronic bronchitis","female","1987",3,7,0,11
+"214","Brazil","chronic bronchitis","female","1988",11,3,5,14
+"215","Brazil","chronic bronchitis","female","1989",13,8,2,8
+"216","Brazil","chronic bronchitis","female","1990",7,7,0,5
+"217","Brazil","chronic bronchitis","female","1991",5,5,1,2
+"218","Brazil","chronic bronchitis","female","1992",7,3,3,7
+"219","Brazil","chronic bronchitis","female","1993",4,4,1,4
+"220","Brazil","chronic bronchitis","female","1994",3,5,3,3
+"221","Brazil","chronic bronchitis","female","1995",6,9,0,10
+"222","Brazil","chronic bronchitis","male","1979",7,11,1,16
+"223","Brazil","chronic bronchitis","male","1980",4,10,1,25
+"224","Brazil","chronic bronchitis","male","1981",12,7,5,30
+"225","Brazil","chronic bronchitis","male","1982",10,15,1,16
+"226","Brazil","chronic bronchitis","male","1983",4,11,0,17
+"227","Brazil","chronic bronchitis","male","1984",6,13,4,12
+"228","Brazil","chronic bronchitis","male","1985",9,16,4,17
+"229","Brazil","chronic bronchitis","male","1986",11,9,2,11
+"230","Brazil","chronic bronchitis","male","1987",12,5,3,10
+"231","Brazil","chronic bronchitis","male","1988",9,10,1,19
+"232","Brazil","chronic bronchitis","male","1989",7,8,2,10
+"233","Brazil","chronic bronchitis","male","1990",9,9,1,10
+"234","Brazil","chronic bronchitis","male","1991",3,5,1,8
+"235","Brazil","chronic bronchitis","male","1992",7,1,0,7
+"236","Brazil","chronic bronchitis","male","1993",4,8,2,5
+"237","Brazil","chronic bronchitis","male","1994",9,7,1,11
+"238","Brazil","chronic bronchitis","male","1995",1,5,3,8
+"239","Brazil","emphysema","female","1979",11,2,0,4
+"240","Brazil","emphysema","female","1980",10,1,1,5
+"241","Brazil","emphysema","female","1981",5,0,0,4
+"242","Brazil","emphysema","female","1982",3,3,0,0
+"243","Brazil","emphysema","female","1983",9,2,1,5
+"244","Brazil","emphysema","female","1984",8,2,0,2
+"245","Brazil","emphysema","female","1985",7,0,1,0
+"246","Brazil","emphysema","female","1986",5,4,1,2
+"247","Brazil","emphysema","female","1987",7,2,0,2
+"248","Brazil","emphysema","female","1988",6,5,1,2
+"249","Brazil","emphysema","female","1989",5,0,0,4
+"250","Brazil","emphysema","female","1990",4,1,1,3
+"251","Brazil","emphysema","female","1991",3,3,0,1
+"252","Brazil","emphysema","female","1992",3,2,0,0
+"253","Brazil","emphysema","female","1993",9,1,1,3
+"254","Brazil","emphysema","female","1994",3,2,1,1
+"255","Brazil","emphysema","female","1995",8,2,0,1
+"256","Brazil","emphysema","male","1979",11,1,1,7
+"257","Brazil","emphysema","male","1980",10,2,0,0
+"258","Brazil","emphysema","male","1981",5,2,2,6
+"259","Brazil","emphysema","male","1982",16,2,0,5
+"260","Brazil","emphysema","male","1983",11,3,0,3
+"261","Brazil","emphysema","male","1984",6,3,1,5
+"262","Brazil","emphysema","male","1985",9,0,0,0
+"263","Brazil","emphysema","male","1986",10,4,1,6
+"264","Brazil","emphysema","male","1987",7,2,1,2
+"265","Brazil","emphysema","male","1988",9,5,0,3
+"266","Brazil","emphysema","male","1989",12,1,0,6
+"267","Brazil","emphysema","male","1990",9,1,0,5
+"268","Brazil","emphysema","male","1991",8,0,0,1
+"269","Brazil","emphysema","male","1992",3,1,0,0
+"270","Brazil","emphysema","male","1993",4,0,0,3
+"271","Brazil","emphysema","male","1994",14,0,0,0
+"272","Brazil","emphysema","male","1995",7,1,0,3
+"273","Brazil","helminths","female","1979",49,82,20,19
+"274","Brazil","helminths","female","1980",69,84,18,17
+"275","Brazil","helminths","female","1981",57,75,19,15
+"276","Brazil","helminths","female","1982",52,75,19,9
+"277","Brazil","helminths","female","1983",42,81,32,14
+"278","Brazil","helminths","female","1984",50,93,18,17
+"279","Brazil","helminths","female","1985",37,77,23,14
+"280","Brazil","helminths","female","1986",39,66,24,11
+"281","Brazil","helminths","female","1987",34,62,10,14
+"282","Brazil","helminths","female","1988",38,72,13,14
+"283","Brazil","helminths","female","1989",20,83,12,6
+"284","Brazil","helminths","female","1990",27,72,17,7
+"285","Brazil","helminths","female","1991",28,43,4,11
+"286","Brazil","helminths","female","1992",31,66,17,7
+"287","Brazil","helminths","female","1993",31,45,7,10
+"288","Brazil","helminths","female","1994",29,49,3,6
+"289","Brazil","helminths","female","1995",35,28,4,7
+"290","Brazil","helminths","male","1979",92,82,22,20
+"291","Brazil","helminths","male","1980",106,55,23,15
+"292","Brazil","helminths","male","1981",71,75,29,17
+"293","Brazil","helminths","male","1982",73,69,22,15
+"294","Brazil","helminths","male","1983",56,82,31,23
+"295","Brazil","helminths","male","1984",60,85,23,17
+"296","Brazil","helminths","male","1985",50,90,34,18
+"297","Brazil","helminths","male","1986",43,68,31,15
+"298","Brazil","helminths","male","1987",59,69,22,18
+"299","Brazil","helminths","male","1988",63,60,19,20
+"300","Brazil","helminths","male","1989",51,65,12,12
+"301","Brazil","helminths","male","1990",62,58,12,7
+"302","Brazil","helminths","male","1991",42,50,16,11
+"303","Brazil","helminths","male","1992",52,49,13,6
+"304","Brazil","helminths","male","1993",54,32,12,4
+"305","Brazil","helminths","male","1994",51,33,5,5
+"306","Brazil","helminths","male","1995",49,32,8,10
+"307","Brazil","intestinal","female","1979",56,1919,139,15548
+"308","Brazil","intestinal","female","1980",53,1985,113,14232
+"309","Brazil","intestinal","female","1981",48,1761,104,12385
+"310","Brazil","intestinal","female","1982",59,1528,99,11439
+"311","Brazil","intestinal","female","1983",50,1660,123,10682
+"312","Brazil","intestinal","female","1984",70,1794,106,10521
+"313","Brazil","intestinal","female","1985",43,1164,93,7758
+"314","Brazil","intestinal","female","1986",43,1150,102,7759
+"315","Brazil","intestinal","female","1987",46,961,66,6942
+"316","Brazil","intestinal","female","1988",53,940,79,6659
+"317","Brazil","intestinal","female","1989",47,801,54,5550
+"318","Brazil","intestinal","female","1990",40,698,70,4625
+"319","Brazil","intestinal","female","1991",41,530,46,3629
+"320","Brazil","intestinal","female","1992",57,530,49,3547
+"321","Brazil","intestinal","female","1993",51,571,56,3606
+"322","Brazil","intestinal","female","1994",59,607,44,3412
+"323","Brazil","intestinal","female","1995",42,462,32,2966
+"324","Brazil","intestinal","male","1979",69,2072,162,20224
+"325","Brazil","intestinal","male","1980",53,2034,148,18054
+"326","Brazil","intestinal","male","1981",57,1913,123,16332
+"327","Brazil","intestinal","male","1982",65,1571,118,14782
+"328","Brazil","intestinal","male","1983",70,1780,151,13907
+"329","Brazil","intestinal","male","1984",76,1921,128,13474
+"330","Brazil","intestinal","male","1985",62,1271,144,9651
+"331","Brazil","intestinal","male","1986",92,1239,101,10194
+"332","Brazil","intestinal","male","1987",73,1077,90,8867
+"333","Brazil","intestinal","male","1988",75,977,89,8555
+"334","Brazil","intestinal","male","1989",61,898,79,7331
+"335","Brazil","intestinal","male","1990",74,778,72,6140
+"336","Brazil","intestinal","male","1991",85,630,52,4623
+"337","Brazil","intestinal","male","1992",85,569,31,4793
+"338","Brazil","intestinal","male","1993",74,711,55,4925
+"339","Brazil","intestinal","male","1994",97,661,69,4652
+"340","Brazil","intestinal","male","1995",75,517,45,3871
+"341","Brazil","measles","female","1979",14,841,91,664
+"342","Brazil","measles","female","1980",12,832,74,615
+"343","Brazil","measles","female","1981",4,594,54,443
+"344","Brazil","measles","female","1982",2,355,28,359
+"345","Brazil","measles","female","1983",3,462,32,343
+"346","Brazil","measles","female","1984",9,494,52,494
+"347","Brazil","measles","female","1985",8,267,24,209
+"348","Brazil","measles","female","1986",19,339,50,336
+"349","Brazil","measles","female","1987",7,188,32,164
+"350","Brazil","measles","female","1988",6,81,9,69
+"351","Brazil","measles","female","1989",2,67,8,53
+"352","Brazil","measles","female","1990",3,111,10,84
+"353","Brazil","measles","female","1991",5,29,2,46
+"354","Brazil","measles","female","1992",0,6,2,4
+"355","Brazil","measles","female","1993",0,2,0,2
+"356","Brazil","measles","female","1994",0,0,0,1
+"357","Brazil","measles","female","1995",0,1,1,1
+"358","Brazil","measles","male","1979",5,845,80,769
+"359","Brazil","measles","male","1980",9,811,69,748
+"360","Brazil","measles","male","1981",6,578,57,539
+"361","Brazil","measles","male","1982",4,388,37,464
+"362","Brazil","measles","male","1983",5,443,32,379
+"363","Brazil","measles","male","1984",14,604,40,573
+"364","Brazil","measles","male","1985",13,281,30,262
+"365","Brazil","measles","male","1986",11,357,52,358
+"366","Brazil","measles","male","1987",8,174,27,160
+"367","Brazil","measles","male","1988",2,110,12,89
+"368","Brazil","measles","male","1989",4,63,3,52
+"369","Brazil","measles","male","1990",10,115,19,98
+"370","Brazil","measles","male","1991",5,48,4,53
+"371","Brazil","measles","male","1992",1,2,1,9
+"372","Brazil","measles","male","1993",1,5,2,0
+"373","Brazil","measles","male","1994",0,2,1,1
+"374","Brazil","measles","male","1995",0,0,1,3
+"375","Brazil","mening unsp","female","1979",32,127,44,332
+"376","Brazil","mening unsp","female","1980",28,99,29,365
+"377","Brazil","mening unsp","female","1981",20,91,28,325
+"378","Brazil","mening unsp","female","1982",23,86,28,312
+"379","Brazil","mening unsp","female","1983",28,89,24,254
+"380","Brazil","mening unsp","female","1984",29,95,32,247
+"381","Brazil","mening unsp","female","1985",26,83,22,228
+"382","Brazil","mening unsp","female","1986",34,65,28,243
+"383","Brazil","mening unsp","female","1987",30,69,35,214
+"384","Brazil","mening unsp","female","1988",50,71,27,192
+"385","Brazil","mening unsp","female","1989",21,76,24,171
+"386","Brazil","mening unsp","female","1990",29,73,22,131
+"387","Brazil","mening unsp","female","1991",23,57,15,127
+"388","Brazil","mening unsp","female","1992",27,50,30,121
+"389","Brazil","mening unsp","female","1993",18,53,26,130
+"390","Brazil","mening unsp","female","1994",25,61,20,129
+"391","Brazil","mening unsp","female","1995",20,51,11,133
+"392","Brazil","mening unsp","male","1979",36,139,47,457
+"393","Brazil","mening unsp","male","1980",54,146,44,451
+"394","Brazil","mening unsp","male","1981",43,137,45,456
+"395","Brazil","mening unsp","male","1982",37,112,39,423
+"396","Brazil","mening unsp","male","1983",40,116,41,393
+"397","Brazil","mening unsp","male","1984",39,112,41,336
+"398","Brazil","mening unsp","male","1985",33,87,37,314
+"399","Brazil","mening unsp","male","1986",40,107,38,290
+"400","Brazil","mening unsp","male","1987",51,101,39,283
+"401","Brazil","mening unsp","male","1988",53,85,29,262
+"402","Brazil","mening unsp","male","1989",31,87,29,208
+"403","Brazil","mening unsp","male","1990",37,99,34,179
+"404","Brazil","mening unsp","male","1991",29,54,26,187
+"405","Brazil","mening unsp","male","1992",36,74,23,157
+"406","Brazil","mening unsp","male","1993",29,81,31,187
+"407","Brazil","mening unsp","male","1994",51,63,29,182
+"408","Brazil","mening unsp","male","1995",47,83,29,158
+"409","Brazil","meningococcal infec","female","1979",14,48,20,82
+"410","Brazil","meningococcal infec","female","1980",2,42,12,51
+"411","Brazil","meningococcal infec","female","1981",8,31,21,40
+"412","Brazil","meningococcal infec","female","1982",9,37,14,24
+"413","Brazil","meningococcal infec","female","1983",9,33,10,42
+"414","Brazil","meningococcal infec","female","1984",7,57,20,42
+"415","Brazil","meningococcal infec","female","1985",8,29,23,42
+"416","Brazil","meningococcal infec","female","1986",7,53,24,43
+"417","Brazil","meningococcal infec","female","1987",9,84,26,48
+"418","Brazil","meningococcal infec","female","1988",5,67,39,58
+"419","Brazil","meningococcal infec","female","1989",10,91,40,54
+"420","Brazil","meningococcal infec","female","1990",14,110,52,67
+"421","Brazil","meningococcal infec","female","1991",11,111,42,65
+"422","Brazil","meningococcal infec","female","1992",19,102,46,63
+"423","Brazil","meningococcal infec","female","1993",24,126,54,62
+"424","Brazil","meningococcal infec","female","1994",28,132,50,84
+"425","Brazil","meningococcal infec","female","1995",22,138,64,103
+"426","Brazil","meningococcal infec","male","1979",19,64,27,116
+"427","Brazil","meningococcal infec","male","1980",19,65,11,67
+"428","Brazil","meningococcal infec","male","1981",13,42,16,77
+"429","Brazil","meningococcal infec","male","1982",8,45,19,55
+"430","Brazil","meningococcal infec","male","1983",8,50,7,50
+"431","Brazil","meningococcal infec","male","1984",11,59,18,46
+"432","Brazil","meningococcal infec","male","1985",7,49,23,43
+"433","Brazil","meningococcal infec","male","1986",7,76,26,58
+"434","Brazil","meningococcal infec","male","1987",12,77,31,54
+"435","Brazil","meningococcal infec","male","1988",11,114,49,62
+"436","Brazil","meningococcal infec","male","1989",17,116,51,86
+"437","Brazil","meningococcal infec","male","1990",24,131,58,89
+"438","Brazil","meningococcal infec","male","1991",17,134,60,81
+"439","Brazil","meningococcal infec","male","1992",25,144,62,77
+"440","Brazil","meningococcal infec","male","1993",19,180,65,88
+"441","Brazil","meningococcal infec","male","1994",27,163,69,125
+"442","Brazil","meningococcal infec","male","1995",32,201,60,117
+"443","Brazil","pneumococcal pneumonia","female","1979",44,69,16,150
+"444","Brazil","pneumococcal pneumonia","female","1980",45,74,10,130
+"445","Brazil","pneumococcal pneumonia","female","1981",43,50,13,127
+"446","Brazil","pneumococcal pneumonia","female","1982",30,52,11,118
+"447","Brazil","pneumococcal pneumonia","female","1983",23,50,8,111
+"448","Brazil","pneumococcal pneumonia","female","1984",29,51,22,134
+"449","Brazil","pneumococcal pneumonia","female","1985",29,36,11,84
+"450","Brazil","pneumococcal pneumonia","female","1986",33,42,7,89
+"451","Brazil","pneumococcal pneumonia","female","1987",37,36,8,67
+"452","Brazil","pneumococcal pneumonia","female","1988",31,44,7,72
+"453","Brazil","pneumococcal pneumonia","female","1989",28,42,4,77
+"454","Brazil","pneumococcal pneumonia","female","1990",26,44,9,62
+"455","Brazil","pneumococcal pneumonia","female","1991",28,26,6,46
+"456","Brazil","pneumococcal pneumonia","female","1992",21,31,2,45
+"457","Brazil","pneumococcal pneumonia","female","1993",35,45,6,49
+"458","Brazil","pneumococcal pneumonia","female","1994",22,38,12,72
+"459","Brazil","pneumococcal pneumonia","female","1995",28,33,8,48
+"460","Brazil","pneumococcal pneumonia","male","1979",64,88,22,186
+"461","Brazil","pneumococcal pneumonia","male","1980",66,72,17,184
+"462","Brazil","pneumococcal pneumonia","male","1981",59,43,11,170
+"463","Brazil","pneumococcal pneumonia","male","1982",55,52,8,141
+"464","Brazil","pneumococcal pneumonia","male","1983",52,67,10,186
+"465","Brazil","pneumococcal pneumonia","male","1984",66,56,13,171
+"466","Brazil","pneumococcal pneumonia","male","1985",51,41,13,121
+"467","Brazil","pneumococcal pneumonia","male","1986",72,43,12,95
+"468","Brazil","pneumococcal pneumonia","male","1987",47,43,8,80
+"469","Brazil","pneumococcal pneumonia","male","1988",62,51,13,79
+"470","Brazil","pneumococcal pneumonia","male","1989",58,36,10,79
+"471","Brazil","pneumococcal pneumonia","male","1990",63,38,9,77
+"472","Brazil","pneumococcal pneumonia","male","1991",59,30,9,61
+"473","Brazil","pneumococcal pneumonia","male","1992",51,24,9,54
+"474","Brazil","pneumococcal pneumonia","male","1993",67,40,8,86
+"475","Brazil","pneumococcal pneumonia","male","1994",75,38,12,96
+"476","Brazil","pneumococcal pneumonia","male","1995",68,41,10,73
+"477","Brazil","pneumonia other","female","1979",13,70,15,118
+"478","Brazil","pneumonia other","female","1980",11,71,16,131
+"479","Brazil","pneumonia other","female","1981",13,67,7,117
+"480","Brazil","pneumonia other","female","1982",12,56,7,135
+"481","Brazil","pneumonia other","female","1983",10,63,4,108
+"482","Brazil","pneumonia other","female","1984",15,101,11,147
+"483","Brazil","pneumonia other","female","1985",21,103,13,151
+"484","Brazil","pneumonia other","female","1986",22,89,11,185
+"485","Brazil","pneumonia other","female","1987",20,81,16,165
+"486","Brazil","pneumonia other","female","1988",33,104,17,186
+"487","Brazil","pneumonia other","female","1989",26,68,16,89
+"488","Brazil","pneumonia other","female","1990",35,69,10,116
+"489","Brazil","pneumonia other","female","1991",29,44,6,100
+"490","Brazil","pneumonia other","female","1992",39,78,5,117
+"491","Brazil","pneumonia other","female","1993",22,89,13,129
+"492","Brazil","pneumonia other","female","1994",33,81,13,118
+"493","Brazil","pneumonia other","female","1995",37,64,12,82
+"494","Brazil","pneumonia other","male","1979",20,79,18,165
+"495","Brazil","pneumonia other","male","1980",15,78,13,156
+"496","Brazil","pneumonia other","male","1981",11,70,10,151
+"497","Brazil","pneumonia other","male","1982",12,74,11,147
+"498","Brazil","pneumonia other","male","1983",18,78,14,145
+"499","Brazil","pneumonia other","male","1984",28,112,16,209
+"500","Brazil","pneumonia other","male","1985",15,103,22,194
+"501","Brazil","pneumonia other","male","1986",41,115,14,240
+"502","Brazil","pneumonia other","male","1987",28,102,20,201
+"503","Brazil","pneumonia other","male","1988",38,106,17,213
+"504","Brazil","pneumonia other","male","1989",39,59,10,125
+"505","Brazil","pneumonia other","male","1990",30,66,14,146
+"506","Brazil","pneumonia other","male","1991",40,60,16,116
+"507","Brazil","pneumonia other","male","1992",55,66,16,166
+"508","Brazil","pneumonia other","male","1993",55,86,10,155
+"509","Brazil","pneumonia other","male","1994",44,91,17,124
+"510","Brazil","pneumonia other","male","1995",53,86,6,122
+"511","Brazil","pneumonia unsp","female","1979",94,631,64,1812
+"512","Brazil","pneumonia unsp","female","1980",95,611,69,1617
+"513","Brazil","pneumonia unsp","female","1981",81,495,80,1482
+"514","Brazil","pneumonia unsp","female","1982",86,476,71,1438
+"515","Brazil","pneumonia unsp","female","1983",100,512,62,1286
+"516","Brazil","pneumonia unsp","female","1984",116,563,82,1389
+"517","Brazil","pneumonia unsp","female","1985",105,391,67,1252
+"518","Brazil","pneumonia unsp","female","1986",124,461,77,1330
+"519","Brazil","pneumonia unsp","female","1987",121,405,59,1152
+"520","Brazil","pneumonia unsp","female","1988",138,401,63,1257
+"521","Brazil","pneumonia unsp","female","1989",127,386,71,1094
+"522","Brazil","pneumonia unsp","female","1990",162,456,72,1139
+"523","Brazil","pneumonia unsp","female","1991",138,366,66,833
+"524","Brazil","pneumonia unsp","female","1992",144,354,77,975
+"525","Brazil","pneumonia unsp","female","1993",141,339,67,1081
+"526","Brazil","pneumonia unsp","female","1994",156,440,86,1160
+"527","Brazil","pneumonia unsp","female","1995",142,414,60,1041
+"528","Brazil","pneumonia unsp","male","1979",113,661,92,2313
+"529","Brazil","pneumonia unsp","male","1980",121,599,99,2062
+"530","Brazil","pneumonia unsp","male","1981",123,542,84,1903
+"531","Brazil","pneumonia unsp","male","1982",90,495,59,1874
+"532","Brazil","pneumonia unsp","male","1983",148,535,88,1764
+"533","Brazil","pneumonia unsp","male","1984",136,562,91,1763
+"534","Brazil","pneumonia unsp","male","1985",142,498,86,1560
+"535","Brazil","pneumonia unsp","male","1986",189,527,92,1714
+"536","Brazil","pneumonia unsp","male","1987",159,423,81,1523
+"537","Brazil","pneumonia unsp","male","1988",180,445,86,1732
+"538","Brazil","pneumonia unsp","male","1989",218,429,87,1466
+"539","Brazil","pneumonia unsp","male","1990",208,456,77,1483
+"540","Brazil","pneumonia unsp","male","1991",203,375,72,1140
+"541","Brazil","pneumonia unsp","male","1992",242,378,70,1202
+"542","Brazil","pneumonia unsp","male","1993",291,449,81,1421
+"543","Brazil","pneumonia unsp","male","1994",288,502,81,1437
+"544","Brazil","pneumonia unsp","male","1995",300,468,64,1333
+"545","Brazil","resp infection","female","1979",2,5,0,12
+"546","Brazil","resp infection","female","1980",3,4,0,18
+"547","Brazil","resp infection","female","1981",0,2,1,9
+"548","Brazil","resp infection","female","1982",0,6,1,8
+"549","Brazil","resp infection","female","1983",0,4,0,6
+"550","Brazil","resp infection","female","1984",1,3,2,6
+"551","Brazil","resp infection","female","1985",0,4,0,12
+"552","Brazil","resp infection","female","1986",0,2,0,13
+"553","Brazil","resp infection","female","1987",1,1,0,11
+"554","Brazil","resp infection","female","1988",1,1,0,20
+"555","Brazil","resp infection","female","1989",0,1,0,16
+"556","Brazil","resp infection","female","1990",0,2,0,3
+"557","Brazil","resp infection","female","1991",1,1,0,7
+"558","Brazil","resp infection","female","1992",0,4,0,10
+"559","Brazil","resp infection","female","1993",1,2,1,10
+"560","Brazil","resp infection","female","1994",1,6,1,5
+"561","Brazil","resp infection","female","1995",0,0,1,9
+"562","Brazil","resp infection","male","1979",5,2,0,30
+"563","Brazil","resp infection","male","1980",0,3,2,23
+"564","Brazil","resp infection","male","1981",3,4,2,9
+"565","Brazil","resp infection","male","1982",0,2,0,7
+"566","Brazil","resp infection","male","1983",0,3,0,16
+"567","Brazil","resp infection","male","1984",0,3,1,17
+"568","Brazil","resp infection","male","1985",3,2,0,11
+"569","Brazil","resp infection","male","1986",1,3,0,19
+"570","Brazil","resp infection","male","1987",1,2,0,15
+"571","Brazil","resp infection","male","1988",0,3,0,11
+"572","Brazil","resp infection","male","1989",2,4,1,29
+"573","Brazil","resp infection","male","1990",1,6,0,12
+"574","Brazil","resp infection","male","1991",1,3,0,10
+"575","Brazil","resp infection","male","1992",0,3,0,13
+"576","Brazil","resp infection","male","1993",0,2,1,11
+"577","Brazil","resp infection","male","1994",0,3,1,9
+"578","Brazil","resp infection","male","1995",1,6,1,11
+"579","Brazil","rubella","female","1979",0,0,0,2
+"580","Brazil","rubella","female","1980",1,0,0,0
+"581","Brazil","rubella","female","1981",0,1,0,2
+"582","Brazil","rubella","female","1982",0,1,0,1
+"583","Brazil","rubella","female","1983",0,1,0,2
+"584","Brazil","rubella","female","1984",1,0,0,0
+"585","Brazil","rubella","female","1985",0,1,0,0
+"586","Brazil","rubella","female","1986",0,2,0,0
+"587","Brazil","rubella","female","1987",0,1,0,0
+"588","Brazil","rubella","female","1988",0,1,0,0
+"589","Brazil","rubella","female","1989",0,0,0,1
+"590","Brazil","rubella","female","1990",0,0,0,0
+"591","Brazil","rubella","female","1991",0,0,1,0
+"592","Brazil","rubella","female","1992",0,0,0,0
+"593","Brazil","rubella","female","1993",0,1,0,0
+"594","Brazil","rubella","female","1994",0,0,0,0
+"595","Brazil","rubella","female","1995",0,1,0,0
+"596","Brazil","rubella","male","1979",0,2,1,2
+"597","Brazil","rubella","male","1980",0,1,0,0
+"598","Brazil","rubella","male","1981",0,0,0,2
+"599","Brazil","rubella","male","1982",0,0,0,0
+"600","Brazil","rubella","male","1983",0,0,0,0
+"601","Brazil","rubella","male","1984",0,1,0,2
+"602","Brazil","rubella","male","1985",0,0,0,1
+"603","Brazil","rubella","male","1986",0,0,0,1
+"604","Brazil","rubella","male","1987",0,1,0,0
+"605","Brazil","rubella","male","1988",0,0,0,0
+"606","Brazil","rubella","male","1989",0,0,0,1
+"607","Brazil","rubella","male","1990",0,1,1,0
+"608","Brazil","rubella","male","1991",0,0,0,2
+"609","Brazil","rubella","male","1992",1,0,0,0
+"610","Brazil","rubella","male","1993",0,2,0,0
+"611","Brazil","rubella","male","1994",0,0,0,0
+"612","Brazil","rubella","male","1995",0,1,0,1
+"613","Brazil","septicemia","female","1979",138,265,51,1498
+"614","Brazil","septicemia","female","1980",170,286,39,1456
+"615","Brazil","septicemia","female","1981",162,282,49,1403
+"616","Brazil","septicemia","female","1982",181,285,54,1588
+"617","Brazil","septicemia","female","1983",161,280,54,1270
+"618","Brazil","septicemia","female","1984",182,415,75,1552
+"619","Brazil","septicemia","female","1985",170,297,55,1196
+"620","Brazil","septicemia","female","1986",202,283,75,1258
+"621","Brazil","septicemia","female","1987",195,277,70,1239
+"622","Brazil","septicemia","female","1988",195,295,75,1200
+"623","Brazil","septicemia","female","1989",175,268,62,1075
+"624","Brazil","septicemia","female","1990",185,242,54,974
+"625","Brazil","septicemia","female","1991",205,236,63,903
+"626","Brazil","septicemia","female","1992",182,235,55,1105
+"627","Brazil","septicemia","female","1993",201,273,70,1125
+"628","Brazil","septicemia","female","1994",215,273,67,1211
+"629","Brazil","septicemia","female","1995",178,274,55,979
+"630","Brazil","septicemia","male","1979",88,308,73,1920
+"631","Brazil","septicemia","male","1980",116,290,56,1850
+"632","Brazil","septicemia","male","1981",81,283,51,1875
+"633","Brazil","septicemia","male","1982",113,299,65,2075
+"634","Brazil","septicemia","male","1983",121,319,59,1715
+"635","Brazil","septicemia","male","1984",155,421,81,2149
+"636","Brazil","septicemia","male","1985",144,318,73,1590
+"637","Brazil","septicemia","male","1986",166,306,85,1646
+"638","Brazil","septicemia","male","1987",165,319,81,1524
+"639","Brazil","septicemia","male","1988",180,329,83,1609
+"640","Brazil","septicemia","male","1989",201,340,94,1412
+"641","Brazil","septicemia","male","1990",216,278,73,1334
+"642","Brazil","septicemia","male","1991",222,272,66,1286
+"643","Brazil","septicemia","male","1992",225,304,90,1559
+"644","Brazil","septicemia","male","1993",232,308,76,1564
+"645","Brazil","septicemia","male","1994",231,357,84,1591
+"646","Brazil","septicemia","male","1995",272,310,86,1250
+"647","Brazil","TB","female","1979",344,120,40,101
+"648","Brazil","TB","female","1980",309,128,35,100
+"649","Brazil","TB","female","1981",313,93,33,90
+"650","Brazil","TB","female","1982",255,71,25,91
+"651","Brazil","TB","female","1983",259,68,22,73
+"652","Brazil","TB","female","1984",247,79,18,75
+"653","Brazil","TB","female","1985",194,58,18,41
+"654","Brazil","TB","female","1986",216,40,15,48
+"655","Brazil","TB","female","1987",221,61,15,57
+"656","Brazil","TB","female","1988",218,49,21,35
+"657","Brazil","TB","female","1989",214,47,20,27
+"658","Brazil","TB","female","1990",248,45,16,23
+"659","Brazil","TB","female","1991",219,27,13,24
+"660","Brazil","TB","female","1992",223,31,8,22
+"661","Brazil","TB","female","1993",207,16,10,21
+"662","Brazil","TB","female","1994",231,30,8,17
+"663","Brazil","TB","female","1995",189,30,5,28
+"664","Brazil","TB","male","1979",368,140,52,117
+"665","Brazil","TB","male","1980",400,137,37,119
+"666","Brazil","TB","male","1981",385,132,28,119
+"667","Brazil","TB","male","1982",299,81,35,96
+"668","Brazil","TB","male","1983",269,96,27,76
+"669","Brazil","TB","male","1984",279,81,28,68
+"670","Brazil","TB","male","1985",258,73,29,73
+"671","Brazil","TB","male","1986",284,71,18,52
+"672","Brazil","TB","male","1987",289,58,23,52
+"673","Brazil","TB","male","1988",301,48,28,50
+"674","Brazil","TB","male","1989",336,47,21,46
+"675","Brazil","TB","male","1990",306,45,20,50
+"676","Brazil","TB","male","1991",321,44,14,29
+"677","Brazil","TB","male","1992",320,23,15,24
+"678","Brazil","TB","male","1993",322,32,12,35
+"679","Brazil","TB","male","1994",296,26,16,30
+"680","Brazil","TB","male","1995",334,28,12,27
+"681","Brazil","URT","female","1979",2,26,3,32
+"682","Brazil","URT","female","1980",3,17,1,17
+"683","Brazil","URT","female","1981",7,13,2,11
+"684","Brazil","URT","female","1982",4,23,2,28
+"685","Brazil","URT","female","1983",2,19,3,19
+"686","Brazil","URT","female","1984",0,22,4,17
+"687","Brazil","URT","female","1985",2,20,4,15
+"688","Brazil","URT","female","1986",2,12,5,10
+"689","Brazil","URT","female","1987",0,9,4,12
+"690","Brazil","URT","female","1988",1,10,3,20
+"691","Brazil","URT","female","1989",1,7,2,16
+"692","Brazil","URT","female","1990",2,11,1,16
+"693","Brazil","URT","female","1991",3,16,2,8
+"694","Brazil","URT","female","1992",3,13,2,7
+"695","Brazil","URT","female","1993",2,8,2,8
+"696","Brazil","URT","female","1994",2,10,4,15
+"697","Brazil","URT","female","1995",2,7,1,9
+"698","Brazil","URT","male","1979",3,25,5,35
+"699","Brazil","URT","male","1980",3,23,4,30
+"700","Brazil","URT","male","1981",3,18,4,20
+"701","Brazil","URT","male","1982",2,14,7,17
+"702","Brazil","URT","male","1983",0,24,3,17
+"703","Brazil","URT","male","1984",3,30,6,18
+"704","Brazil","URT","male","1985",1,28,5,16
+"705","Brazil","URT","male","1986",3,22,4,24
+"706","Brazil","URT","male","1987",7,20,3,17
+"707","Brazil","URT","male","1988",5,27,3,18
+"708","Brazil","URT","male","1989",1,18,4,19
+"709","Brazil","URT","male","1990",6,26,2,19
+"710","Brazil","URT","male","1991",1,24,2,12
+"711","Brazil","URT","male","1992",0,24,2,15
+"712","Brazil","URT","male","1993",1,16,3,15
+"713","Brazil","URT","male","1994",1,23,1,22
+"714","Brazil","URT","male","1995",3,26,5,15
+"715","Brazil","acute bronchitis","both","1979",4,149,12,1433
+"716","Brazil","acute bronchitis","both","1980",3,98,6,1262
+"717","Brazil","acute bronchitis","both","1981",5,118,6,1171
+"718","Brazil","acute bronchitis","both","1982",3,89,5,1077
+"719","Brazil","acute bronchitis","both","1983",1,83,6,816
+"720","Brazil","acute bronchitis","both","1984",3,62,6,724
+"721","Brazil","acute bronchitis","both","1985",2,70,4,650
+"722","Brazil","acute bronchitis","both","1986",4,58,4,610
+"723","Brazil","acute bronchitis","both","1987",6,55,4,518
+"724","Brazil","acute bronchitis","both","1988",5,46,6,620
+"725","Brazil","acute bronchitis","both","1989",5,43,4,493
+"726","Brazil","acute bronchitis","both","1990",6,52,3,580
+"727","Brazil","acute bronchitis","both","1991",1,35,2,379
+"728","Brazil","acute bronchitis","both","1992",3,29,0,425
+"729","Brazil","acute bronchitis","both","1993",3,34,5,445
+"730","Brazil","acute bronchitis","both","1994",3,32,3,387
+"731","Brazil","acute bronchitis","both","1995",4,32,2,388
+"732","Brazil","asthma","both","1979",76,322,26,300
+"733","Brazil","asthma","both","1980",70,313,36,282
+"734","Brazil","asthma","both","1981",74,271,25,257
+"735","Brazil","asthma","both","1982",75,289,29,302
+"736","Brazil","asthma","both","1983",79,297,30,259
+"737","Brazil","asthma","both","1984",73,253,33,249
+"738","Brazil","asthma","both","1985",72,261,32,205
+"739","Brazil","asthma","both","1986",66,218,29,188
+"740","Brazil","asthma","both","1987",80,215,30,165
+"741","Brazil","asthma","both","1988",72,231,43,170
+"742","Brazil","asthma","both","1989",75,203,26,160
+"743","Brazil","asthma","both","1990",79,212,27,179
+"744","Brazil","asthma","both","1991",53,182,26,122
+"745","Brazil","asthma","both","1992",69,200,38,152
+"746","Brazil","asthma","both","1993",70,182,22,126
+"747","Brazil","asthma","both","1994",73,210,45,119
+"748","Brazil","asthma","both","1995",80,195,29,135
+"749","Brazil","bacterial mening","both","1979",123,300,99,1223
+"750","Brazil","bacterial mening","both","1980",121,251,86,1129
+"751","Brazil","bacterial mening","both","1981",110,280,77,1082
+"752","Brazil","bacterial mening","both","1982",107,251,73,1154
+"753","Brazil","bacterial mening","both","1983",112,271,78,1060
+"754","Brazil","bacterial mening","both","1984",125,317,67,1048
+"755","Brazil","bacterial mening","both","1985",106,266,82,925
+"756","Brazil","bacterial mening","both","1986",133,282,96,897
+"757","Brazil","bacterial mening","both","1987",130,253,74,802
+"758","Brazil","bacterial mening","both","1988",118,245,66,790
+"759","Brazil","bacterial mening","both","1989",140,305,101,805
+"760","Brazil","bacterial mening","both","1990",104,284,76,700
+"761","Brazil","bacterial mening","both","1991",98,290,58,733
+"762","Brazil","bacterial mening","both","1992",100,274,55,721
+"763","Brazil","bacterial mening","both","1993",120,248,61,709
+"764","Brazil","bacterial mening","both","1994",110,256,67,681
+"765","Brazil","bacterial mening","both","1995",122,245,51,622
+"766","Brazil","bronchiectasis","both","1979",13,5,4,5
+"767","Brazil","bronchiectasis","both","1980",9,3,0,10
+"768","Brazil","bronchiectasis","both","1981",12,0,3,6
+"769","Brazil","bronchiectasis","both","1982",10,3,5,1
+"770","Brazil","bronchiectasis","both","1983",4,4,2,1
+"771","Brazil","bronchiectasis","both","1984",7,5,2,3
+"772","Brazil","bronchiectasis","both","1985",11,2,2,5
+"773","Brazil","bronchiectasis","both","1986",8,2,2,0
+"774","Brazil","bronchiectasis","both","1987",12,2,1,3
+"775","Brazil","bronchiectasis","both","1988",16,1,4,0
+"776","Brazil","bronchiectasis","both","1989",13,0,0,7
+"777","Brazil","bronchiectasis","both","1990",6,3,0,3
+"778","Brazil","bronchiectasis","both","1991",11,2,5,1
+"779","Brazil","bronchiectasis","both","1992",8,0,1,0
+"780","Brazil","bronchiectasis","both","1993",10,2,3,6
+"781","Brazil","bronchiectasis","both","1994",10,2,2,3
+"782","Brazil","bronchiectasis","both","1995",8,3,0,0
+"783","Brazil","bronchitis unsp","both","1979",1,53,1,159
+"784","Brazil","bronchitis unsp","both","1980",4,43,2,105
+"785","Brazil","bronchitis unsp","both","1981",2,38,6,105
+"786","Brazil","bronchitis unsp","both","1982",0,39,2,90
+"787","Brazil","bronchitis unsp","both","1983",1,42,4,111
+"788","Brazil","bronchitis unsp","both","1984",1,45,5,85
+"789","Brazil","bronchitis unsp","both","1985",4,39,6,80
+"790","Brazil","bronchitis unsp","both","1986",0,27,1,61
+"791","Brazil","bronchitis unsp","both","1987",1,30,2,63
+"792","Brazil","bronchitis unsp","both","1988",3,31,5,75
+"793","Brazil","bronchitis unsp","both","1989",2,34,2,85
+"794","Brazil","bronchitis unsp","both","1990",1,24,6,85
+"795","Brazil","bronchitis unsp","both","1991",1,11,2,41
+"796","Brazil","bronchitis unsp","both","1992",2,23,4,58
+"797","Brazil","bronchitis unsp","both","1993",6,22,3,60
+"798","Brazil","bronchitis unsp","both","1994",8,29,5,43
+"799","Brazil","bronchitis unsp","both","1995",4,16,5,38
+"800","Brazil","bronchopneumonia","both","1979",432,3081,384,13525
+"801","Brazil","bronchopneumonia","both","1980",437,3003,346,12967
+"802","Brazil","bronchopneumonia","both","1981",440,2645,365,13189
+"803","Brazil","bronchopneumonia","both","1982",392,2454,299,13056
+"804","Brazil","bronchopneumonia","both","1983",420,2293,323,10445
+"805","Brazil","bronchopneumonia","both","1984",467,2514,310,10375
+"806","Brazil","bronchopneumonia","both","1985",411,1956,273,8458
+"807","Brazil","bronchopneumonia","both","1986",510,1989,288,8411
+"808","Brazil","bronchopneumonia","both","1987",498,1468,237,6904
+"809","Brazil","bronchopneumonia","both","1988",553,1530,267,6968
+"810","Brazil","bronchopneumonia","both","1989",506,1365,226,5928
+"811","Brazil","bronchopneumonia","both","1990",497,1253,235,5436
+"812","Brazil","bronchopneumonia","both","1991",471,1016,138,4214
+"813","Brazil","bronchopneumonia","both","1992",551,1061,146,4457
+"814","Brazil","bronchopneumonia","both","1993",591,1110,192,4408
+"815","Brazil","bronchopneumonia","both","1994",603,989,157,4018
+"816","Brazil","bronchopneumonia","both","1995",512,941,165,3605
+"817","Brazil","chronic bronchitis","both","1979",18,23,2,29
+"818","Brazil","chronic bronchitis","both","1980",12,20,4,41
+"819","Brazil","chronic bronchitis","both","1981",17,14,8,49
+"820","Brazil","chronic bronchitis","both","1982",15,21,2,27
+"821","Brazil","chronic bronchitis","both","1983",17,19,2,24
+"822","Brazil","chronic bronchitis","both","1984",19,19,7,26
+"823","Brazil","chronic bronchitis","both","1985",12,28,5,29
+"824","Brazil","chronic bronchitis","both","1986",23,28,4,19
+"825","Brazil","chronic bronchitis","both","1987",15,12,3,21
+"826","Brazil","chronic bronchitis","both","1988",20,13,6,33
+"827","Brazil","chronic bronchitis","both","1989",20,16,4,18
+"828","Brazil","chronic bronchitis","both","1990",16,16,1,15
+"829","Brazil","chronic bronchitis","both","1991",8,10,2,10
+"830","Brazil","chronic bronchitis","both","1992",14,4,3,14
+"831","Brazil","chronic bronchitis","both","1993",8,12,3,9
+"832","Brazil","chronic bronchitis","both","1994",12,12,4,14
+"833","Brazil","chronic bronchitis","both","1995",7,14,3,18
+"834","Brazil","emphysema","both","1979",22,3,1,11
+"835","Brazil","emphysema","both","1980",20,3,1,5
+"836","Brazil","emphysema","both","1981",10,2,2,10
+"837","Brazil","emphysema","both","1982",19,5,0,5
+"838","Brazil","emphysema","both","1983",20,5,1,8
+"839","Brazil","emphysema","both","1984",14,5,1,7
+"840","Brazil","emphysema","both","1985",16,0,1,0
+"841","Brazil","emphysema","both","1986",15,8,2,8
+"842","Brazil","emphysema","both","1987",14,4,1,4
+"843","Brazil","emphysema","both","1988",15,10,1,5
+"844","Brazil","emphysema","both","1989",17,1,0,10
+"845","Brazil","emphysema","both","1990",13,2,1,8
+"846","Brazil","emphysema","both","1991",11,3,0,2
+"847","Brazil","emphysema","both","1992",6,3,0,0
+"848","Brazil","emphysema","both","1993",13,1,1,6
+"849","Brazil","emphysema","both","1994",17,2,1,1
+"850","Brazil","emphysema","both","1995",15,3,0,4
+"851","Brazil","helminths","both","1979",141,164,42,39
+"852","Brazil","helminths","both","1980",175,139,41,32
+"853","Brazil","helminths","both","1981",128,150,48,32
+"854","Brazil","helminths","both","1982",125,144,41,24
+"855","Brazil","helminths","both","1983",98,163,63,37
+"856","Brazil","helminths","both","1984",110,178,41,34
+"857","Brazil","helminths","both","1985",87,167,57,32
+"858","Brazil","helminths","both","1986",82,134,55,26
+"859","Brazil","helminths","both","1987",93,131,32,32
+"860","Brazil","helminths","both","1988",101,132,32,34
+"861","Brazil","helminths","both","1989",71,148,24,18
+"862","Brazil","helminths","both","1990",89,130,29,14
+"863","Brazil","helminths","both","1991",70,93,20,22
+"864","Brazil","helminths","both","1992",83,115,30,13
+"865","Brazil","helminths","both","1993",85,77,19,14
+"866","Brazil","helminths","both","1994",80,82,8,11
+"867","Brazil","helminths","both","1995",84,60,12,17
+"868","Brazil","intestinal","both","1979",125,3991,301,35772
+"869","Brazil","intestinal","both","1980",106,4019,261,32286
+"870","Brazil","intestinal","both","1981",105,3674,227,28717
+"871","Brazil","intestinal","both","1982",124,3099,217,26221
+"872","Brazil","intestinal","both","1983",120,3440,274,24589
+"873","Brazil","intestinal","both","1984",146,3715,234,23995
+"874","Brazil","intestinal","both","1985",105,2435,237,17409
+"875","Brazil","intestinal","both","1986",135,2389,203,17953
+"876","Brazil","intestinal","both","1987",119,2038,156,15809
+"877","Brazil","intestinal","both","1988",128,1917,168,15214
+"878","Brazil","intestinal","both","1989",108,1699,133,12881
+"879","Brazil","intestinal","both","1990",114,1476,142,10765
+"880","Brazil","intestinal","both","1991",126,1160,98,8252
+"881","Brazil","intestinal","both","1992",142,1099,80,8340
+"882","Brazil","intestinal","both","1993",125,1282,111,8531
+"883","Brazil","intestinal","both","1994",156,1268,113,8064
+"884","Brazil","intestinal","both","1995",117,979,77,6837
+"885","Brazil","measles","both","1979",19,1686,171,1433
+"886","Brazil","measles","both","1980",21,1643,143,1363
+"887","Brazil","measles","both","1981",10,1172,111,982
+"888","Brazil","measles","both","1982",6,743,65,823
+"889","Brazil","measles","both","1983",8,905,64,722
+"890","Brazil","measles","both","1984",23,1098,92,1067
+"891","Brazil","measles","both","1985",21,548,54,471
+"892","Brazil","measles","both","1986",30,696,102,694
+"893","Brazil","measles","both","1987",15,362,59,324
+"894","Brazil","measles","both","1988",8,191,21,158
+"895","Brazil","measles","both","1989",6,130,11,105
+"896","Brazil","measles","both","1990",13,226,29,182
+"897","Brazil","measles","both","1991",10,77,6,99
+"898","Brazil","measles","both","1992",1,8,3,13
+"899","Brazil","measles","both","1993",1,7,2,2
+"900","Brazil","measles","both","1994",0,2,1,2
+"901","Brazil","measles","both","1995",0,1,2,4
+"902","Brazil","mening unsp","both","1979",68,266,91,789
+"903","Brazil","mening unsp","both","1980",82,245,73,816
+"904","Brazil","mening unsp","both","1981",63,228,73,781
+"905","Brazil","mening unsp","both","1982",60,198,67,735
+"906","Brazil","mening unsp","both","1983",68,205,65,647
+"907","Brazil","mening unsp","both","1984",68,207,73,583
+"908","Brazil","mening unsp","both","1985",59,170,59,542
+"909","Brazil","mening unsp","both","1986",74,172,66,533
+"910","Brazil","mening unsp","both","1987",81,170,74,497
+"911","Brazil","mening unsp","both","1988",103,156,56,454
+"912","Brazil","mening unsp","both","1989",52,163,53,379
+"913","Brazil","mening unsp","both","1990",66,172,56,310
+"914","Brazil","mening unsp","both","1991",52,111,41,314
+"915","Brazil","mening unsp","both","1992",63,124,53,278
+"916","Brazil","mening unsp","both","1993",47,134,57,317
+"917","Brazil","mening unsp","both","1994",76,124,49,311
+"918","Brazil","mening unsp","both","1995",67,134,40,291
+"919","Brazil","meningococcal infec","both","1979",33,112,47,198
+"920","Brazil","meningococcal infec","both","1980",21,107,23,118
+"921","Brazil","meningococcal infec","both","1981",21,73,37,117
+"922","Brazil","meningococcal infec","both","1982",17,82,33,79
+"923","Brazil","meningococcal infec","both","1983",17,83,17,92
+"924","Brazil","meningococcal infec","both","1984",18,116,38,88
+"925","Brazil","meningococcal infec","both","1985",15,78,46,85
+"926","Brazil","meningococcal infec","both","1986",14,129,50,101
+"927","Brazil","meningococcal infec","both","1987",21,161,57,102
+"928","Brazil","meningococcal infec","both","1988",16,181,88,120
+"929","Brazil","meningococcal infec","both","1989",27,207,91,140
+"930","Brazil","meningococcal infec","both","1990",38,241,110,156
+"931","Brazil","meningococcal infec","both","1991",28,245,102,146
+"932","Brazil","meningococcal infec","both","1992",44,246,108,140
+"933","Brazil","meningococcal infec","both","1993",43,306,119,150
+"934","Brazil","meningococcal infec","both","1994",55,295,119,209
+"935","Brazil","meningococcal infec","both","1995",54,339,124,220
+"936","Brazil","pneumococcal pneumonia","both","1979",108,157,38,336
+"937","Brazil","pneumococcal pneumonia","both","1980",111,146,27,314
+"938","Brazil","pneumococcal pneumonia","both","1981",102,93,24,297
+"939","Brazil","pneumococcal pneumonia","both","1982",85,104,19,259
+"940","Brazil","pneumococcal pneumonia","both","1983",75,117,18,297
+"941","Brazil","pneumococcal pneumonia","both","1984",95,107,35,305
+"942","Brazil","pneumococcal pneumonia","both","1985",80,77,24,205
+"943","Brazil","pneumococcal pneumonia","both","1986",105,85,19,184
+"944","Brazil","pneumococcal pneumonia","both","1987",84,79,16,147
+"945","Brazil","pneumococcal pneumonia","both","1988",93,95,20,151
+"946","Brazil","pneumococcal pneumonia","both","1989",86,78,14,156
+"947","Brazil","pneumococcal pneumonia","both","1990",89,82,18,139
+"948","Brazil","pneumococcal pneumonia","both","1991",87,56,15,107
+"949","Brazil","pneumococcal pneumonia","both","1992",72,55,11,99
+"950","Brazil","pneumococcal pneumonia","both","1993",102,85,14,135
+"951","Brazil","pneumococcal pneumonia","both","1994",97,76,24,168
+"952","Brazil","pneumococcal pneumonia","both","1995",96,74,18,121
+"953","Brazil","pneumonia other","both","1979",33,149,33,283
+"954","Brazil","pneumonia other","both","1980",26,149,29,287
+"955","Brazil","pneumonia other","both","1981",24,137,17,268
+"956","Brazil","pneumonia other","both","1982",24,130,18,282
+"957","Brazil","pneumonia other","both","1983",28,141,18,253
+"958","Brazil","pneumonia other","both","1984",43,213,27,356
+"959","Brazil","pneumonia other","both","1985",36,206,35,345
+"960","Brazil","pneumonia other","both","1986",63,204,25,425
+"961","Brazil","pneumonia other","both","1987",48,183,36,366
+"962","Brazil","pneumonia other","both","1988",71,210,34,399
+"963","Brazil","pneumonia other","both","1989",65,127,26,214
+"964","Brazil","pneumonia other","both","1990",65,135,24,262
+"965","Brazil","pneumonia other","both","1991",69,104,22,216
+"966","Brazil","pneumonia other","both","1992",94,144,21,283
+"967","Brazil","pneumonia other","both","1993",77,175,23,284
+"968","Brazil","pneumonia other","both","1994",77,172,30,242
+"969","Brazil","pneumonia other","both","1995",90,150,18,204
+"970","Brazil","pneumonia unsp","both","1979",207,1292,156,4125
+"971","Brazil","pneumonia unsp","both","1980",216,1210,168,3679
+"972","Brazil","pneumonia unsp","both","1981",204,1037,164,3385
+"973","Brazil","pneumonia unsp","both","1982",176,971,130,3312
+"974","Brazil","pneumonia unsp","both","1983",248,1047,150,3050
+"975","Brazil","pneumonia unsp","both","1984",252,1125,173,3152
+"976","Brazil","pneumonia unsp","both","1985",247,889,153,2812
+"977","Brazil","pneumonia unsp","both","1986",313,988,169,3044
+"978","Brazil","pneumonia unsp","both","1987",280,828,140,2675
+"979","Brazil","pneumonia unsp","both","1988",318,846,149,2989
+"980","Brazil","pneumonia unsp","both","1989",345,815,158,2560
+"981","Brazil","pneumonia unsp","both","1990",370,912,149,2622
+"982","Brazil","pneumonia unsp","both","1991",341,741,138,1973
+"983","Brazil","pneumonia unsp","both","1992",386,732,147,2177
+"984","Brazil","pneumonia unsp","both","1993",432,788,148,2502
+"985","Brazil","pneumonia unsp","both","1994",444,942,167,2597
+"986","Brazil","pneumonia unsp","both","1995",442,882,124,2374
+"987","Brazil","resp infection","both","1979",7,7,0,42
+"988","Brazil","resp infection","both","1980",3,7,2,41
+"989","Brazil","resp infection","both","1981",3,6,3,18
+"990","Brazil","resp infection","both","1982",0,8,1,15
+"991","Brazil","resp infection","both","1983",0,7,0,22
+"992","Brazil","resp infection","both","1984",1,6,3,23
+"993","Brazil","resp infection","both","1985",3,6,0,23
+"994","Brazil","resp infection","both","1986",1,5,0,32
+"995","Brazil","resp infection","both","1987",2,3,0,26
+"996","Brazil","resp infection","both","1988",1,4,0,31
+"997","Brazil","resp infection","both","1989",2,5,1,45
+"998","Brazil","resp infection","both","1990",1,8,0,15
+"999","Brazil","resp infection","both","1991",2,4,0,17
+"1000","Brazil","resp infection","both","1992",0,7,0,23
+"1001","Brazil","resp infection","both","1993",1,4,2,21
+"1002","Brazil","resp infection","both","1994",1,9,2,14
+"1003","Brazil","resp infection","both","1995",1,6,2,20
+"1004","Brazil","rubella","both","1979",0,2,1,4
+"1005","Brazil","rubella","both","1980",1,1,0,0
+"1006","Brazil","rubella","both","1981",0,1,0,4
+"1007","Brazil","rubella","both","1982",0,1,0,1
+"1008","Brazil","rubella","both","1983",0,1,0,2
+"1009","Brazil","rubella","both","1984",1,1,0,2
+"1010","Brazil","rubella","both","1985",0,1,0,1
+"1011","Brazil","rubella","both","1986",0,2,0,1
+"1012","Brazil","rubella","both","1987",0,2,0,0
+"1013","Brazil","rubella","both","1988",0,1,0,0
+"1014","Brazil","rubella","both","1989",0,0,0,2
+"1015","Brazil","rubella","both","1990",0,1,1,0
+"1016","Brazil","rubella","both","1991",0,0,1,2
+"1017","Brazil","rubella","both","1992",1,0,0,0
+"1018","Brazil","rubella","both","1993",0,3,0,0
+"1019","Brazil","rubella","both","1994",0,0,0,0
+"1020","Brazil","rubella","both","1995",0,2,0,1
+"1021","Brazil","septicemia","both","1979",226,573,124,3418
+"1022","Brazil","septicemia","both","1980",286,576,95,3306
+"1023","Brazil","septicemia","both","1981",243,565,100,3278
+"1024","Brazil","septicemia","both","1982",294,584,119,3663
+"1025","Brazil","septicemia","both","1983",282,599,113,2985
+"1026","Brazil","septicemia","both","1984",337,836,156,3701
+"1027","Brazil","septicemia","both","1985",314,615,128,2786
+"1028","Brazil","septicemia","both","1986",368,589,160,2904
+"1029","Brazil","septicemia","both","1987",360,596,151,2763
+"1030","Brazil","septicemia","both","1988",375,624,158,2809
+"1031","Brazil","septicemia","both","1989",376,608,156,2487
+"1032","Brazil","septicemia","both","1990",401,520,127,2308
+"1033","Brazil","septicemia","both","1991",427,508,129,2189
+"1034","Brazil","septicemia","both","1992",407,539,145,2664
+"1035","Brazil","septicemia","both","1993",433,581,146,2689
+"1036","Brazil","septicemia","both","1994",446,630,151,2802
+"1037","Brazil","septicemia","both","1995",450,584,141,2229
+"1038","Brazil","TB","both","1979",712,260,92,218
+"1039","Brazil","TB","both","1980",709,265,72,219
+"1040","Brazil","TB","both","1981",698,225,61,209
+"1041","Brazil","TB","both","1982",554,152,60,187
+"1042","Brazil","TB","both","1983",528,164,49,149
+"1043","Brazil","TB","both","1984",526,160,46,143
+"1044","Brazil","TB","both","1985",452,131,47,114
+"1045","Brazil","TB","both","1986",500,111,33,100
+"1046","Brazil","TB","both","1987",510,119,38,109
+"1047","Brazil","TB","both","1988",519,97,49,85
+"1048","Brazil","TB","both","1989",550,94,41,73
+"1049","Brazil","TB","both","1990",554,90,36,73
+"1050","Brazil","TB","both","1991",540,71,27,53
+"1051","Brazil","TB","both","1992",543,54,23,46
+"1052","Brazil","TB","both","1993",529,48,22,56
+"1053","Brazil","TB","both","1994",527,56,24,47
+"1054","Brazil","TB","both","1995",523,58,17,55
+"1055","Brazil","URT","both","1979",5,51,8,67
+"1056","Brazil","URT","both","1980",6,40,5,47
+"1057","Brazil","URT","both","1981",10,31,6,31
+"1058","Brazil","URT","both","1982",6,37,9,45
+"1059","Brazil","URT","both","1983",2,43,6,36
+"1060","Brazil","URT","both","1984",3,52,10,35
+"1061","Brazil","URT","both","1985",3,48,9,31
+"1062","Brazil","URT","both","1986",5,34,9,34
+"1063","Brazil","URT","both","1987",7,29,7,29
+"1064","Brazil","URT","both","1988",6,37,6,38
+"1065","Brazil","URT","both","1989",2,25,6,35
+"1066","Brazil","URT","both","1990",8,37,3,35
+"1067","Brazil","URT","both","1991",4,40,4,20
+"1068","Brazil","URT","both","1992",3,37,4,22
+"1069","Brazil","URT","both","1993",3,24,5,23
+"1070","Brazil","URT","both","1994",3,33,5,37
+"1071","Brazil","URT","both","1995",5,33,6,24
