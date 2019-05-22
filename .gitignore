@@ -1,1 +1,4 @@
 measles_archive/*
+.Rproj.user
+.DS_Store
+.Rapp.history
