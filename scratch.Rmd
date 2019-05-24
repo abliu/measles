@@ -31,28 +31,108 @@ brazil_population = data.frame(read.csv(
 ```
 
 ```{r}
-# Define POMP model
-sir_step <- function (S, I, R, H, N, delta.t, Beta, gamma, ...) {
-  dN_SI <- rbinom(n=1,size=S,prob=1-exp(-Beta*I/N*delta.t))
-  dN_IR <- rbinom(n=1,size=I,prob=1-exp(-gamma*delta.t))
-  S <- S - dN_SI
-  I <- I + dN_SI - dN_IR
-  R <- R + dN_IR
-  H <- H + dN_IR;
-  c(S = S, I = I, R = R, H = H)
-}
-sir_init <- function (N, ...) {
-  c(S = N-1, I = 1, R = 0, H = 0)
-}
-dmeas <- function (measles0_9, H, rho, log, ...) {
-  dbinom(x=measles0_9, size=H, prob=rho, log=log)
-}
-rmeas <- function (H, rho, ...) {
-  c(measles0_9=rbinom(n=1, size=H, prob=rho))
-}
-brazil_measles %>%
-  pomp(times = "year", t0 = 1978, rprocess=euler(sir_step,delta.t=1/365),
-       rinit=sir_init, accumvars = "H", rmeasure=rmeas,dmeasure=dmeas) -> sir
+# Define POMP model. Reusing the model in
+# https://kingaa.github.io/short-course/measles/measles.html#the-partially-observed-markov-process-model,
+# which is from He, Ionides, & King, J. R. Soc. Interface (2010).
+birthrate = 50000
+pop = 3390000
+rproc <- Csnippet(stringr::str_interp("
+  double beta, br, seas, foi, dw, births;
+  double rate[6], trans[6];
+  double birthrate = $[d]{birthrate};
+  double pop = $[d]{pop};
+
+  // cohort effect
+  if (fabs(t-floor(t)-251.0/365.0) < 0.5*dt)
+    br = cohort*birthrate/dt + (1-cohort)*birthrate;
+  else
+    br = (1.0-cohort)*birthrate;
+
+  // term-time seasonality
+  t = (t-floor(t))*365.25;
+  if ((t>=7&&t<=100) || (t>=115&&t<=199) || (t>=252&&t<=300) || (t>=308&&t<=356))
+      seas = 1.0+amplitude*0.2411/0.7589;
+    else
+      seas = 1.0-amplitude;
+
+  // transmission rate
+  beta = R0*(gamma+mu)*seas;
+  // expected force of infection
+  foi = beta*pow(I+iota,alpha)/pop;
+  // white noise (extrademographic stochasticity)
+  dw = rgammawn(sigmaSE,dt);
+
+  rate[0] = foi*dw/dt;  // stochastic force of infection
+  rate[1] = mu;             // natural S death
+  rate[2] = sigma;        // rate of ending of latent stage
+  rate[3] = mu;             // natural E death
+  rate[4] = gamma;        // recovery
+  rate[5] = mu;             // natural I death
+
+  // Poisson births
+  births = rpois(br*dt);
+
+  // transitions between classes
+  reulermultinom(2,S,&rate[0],dt,&trans[0]);
+  reulermultinom(2,E,&rate[2],dt,&trans[2]);
+  reulermultinom(2,I,&rate[4],dt,&trans[4]);
+
+  S += births   - trans[0] - trans[1];
+  E += trans[0] - trans[2] - trans[3];
+  I += trans[2] - trans[4] - trans[5];
+  R = pop - S - E - I;
+  W += (dw - dt)/sigmaSE;  // standardized i.i.d. white noise
+  C += trans[4];           // true incidence
+"))
+initlz <- Csnippet(stringr::str_interp("
+  double pop = $[d]{pop};
+  double m = pop/(S_0+E_0+I_0+R_0);
+  S = nearbyint(m*S_0);
+  E = nearbyint(m*E_0);
+  I = nearbyint(m*I_0);
+  R = nearbyint(m*R_0);
+  W = 0;
+  C = 0;
+"))
+dmeas <- Csnippet("
+  double m = rho*C;
+  double v = m*(1.0-rho+psi*psi*m);
+  double tol = 1.0e-18;
+  if (cases > 0.0) {
+    lik = pnorm(cases+0.5,m,sqrt(v)+tol,1,0)-pnorm(cases-0.5,m,sqrt(v)+tol,1,0)+tol;
+  } else {
+    lik = pnorm(cases+0.5,m,sqrt(v)+tol,1,0)+tol;
+  }
+")
+rmeas <- Csnippet("
+  double m = rho*C;
+  double v = m*(1.0-rho+psi*psi*m);
+  double tol = 1.0e-18;
+  cases = rnorm(m,sqrt(v)+tol);
+  if (cases > 0.0) {
+    cases = nearbyint(cases);
+  } else {
+    cases = 0.0;
+  }
+")
+times <- seq(from=1979, to=1995, by=1/52)
+paramnames <- c("R0","mu","sigma","gamma","alpha","iota",
+                         "rho","sigmaSE","psi","cohort","amplitude",
+                         "S_0","E_0","I_0","R_0")
+sir <- pomp(data = NULL, times = times, t0 = 2*times[1]-times[2],
+            rprocess=euler(rproc,delta.t=1/365.25),
+            rinit=initlz,
+            dmeasure=dmeas,
+            rmeasure=rmeas,
+            obsnames = "cases",
+            accumvars=c("C","W"),
+            statenames=c("S","E","I","R","C","W"),
+            paramnames=paramnames)
+read.csv(text="
+town,loglik,loglik.sd,mu,delay,sigma,gamma,rho,R0,amplitude,alpha,iota,cohort,psi,S_0,E_0,I_0,R_0,sigmaSE
+London,-3804.9,0.16,0.02,4,28.9,30.4,0.488,56.8,0.554,0.976,2.9,0.557,0.116,0.0297,5.17e-05,5.14e-05,0.97,0.0878
+",stringsAsFactors=FALSE) -> mle
+mle %>% select(paramnames) %>% unlist() -> theta
 ```
 
 ```{r}
@@ -66,16 +146,13 @@ brazil_measles %>%
 # https://www.cdc.gov/vaccines/pubs/pinkbook/downloads/meas.pdf
 sir %>%
   # simulate(params=c(Beta=1.5,gamma=1,rho=0.9,N=2600),
-  simulate(params=c(Beta=780,gamma=52,rho=0.0001,
-                    N=floor(mean(brazil_population$pop0_9))),
+  simulate(params=theta,
            # can make N adj w/ time
            # change nsim back to 20
-           nsim=1,format="data.frame",include.data=TRUE,
-           seed = 96) -> sims
+           nsim=10,format="data.frame", seed = 96) -> sims
 sims %>%
-  ggplot(aes(x=year,y=measles0_9,group=.id,color=.id=="data"))+
+  ggplot(aes(x=time,y=cases,group=.id,color=.id=="data"))+
   geom_line()+
-  guides(color=FALSE)
+  guides(color=FALSE)+
+  facet_wrap(~.id,ncol=2)
 ```
-
-The teal line above is the actual measles incidence data; the red is the incidence curve of one simulation of the SIR model.
