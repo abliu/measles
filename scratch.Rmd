@@ -36,9 +36,13 @@ brazil_population = data.frame(read.csv(
 # which is from He, Ionides, & King, J. R. Soc. Interface (2010).
 birthrate = 50000
 pop = 3390000
+# see https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology to
+# understand the SIR model setup, the definitions of concepts like transmission/
+# contact rate and force of infection and the conventional variable names (e.g.
+# beta, gamma)
 rproc <- Csnippet(stringr::str_interp("
   double beta, br, seas, foi, dw, births;
-  double rate[6], trans[6];
+  double rate[8], trans[8];
   double birthrate = $[d]{birthrate};
   double pop = $[d]{pop};
 
@@ -66,8 +70,10 @@ rproc <- Csnippet(stringr::str_interp("
   rate[1] = mu;             // natural S death
   rate[2] = sigma;        // rate of ending of latent stage
   rate[3] = mu;             // natural E death
-  rate[4] = gamma;        // recovery
+  rate[4] = phi;        // rate of entering immune amnesia
   rate[5] = mu;             // natural I death
+  rate[6] = gamma;             // recovery
+  rate[7] = mu;             // natural A death
 
   // Poisson births
   births = rpois(br*dt);
@@ -76,20 +82,23 @@ rproc <- Csnippet(stringr::str_interp("
   reulermultinom(2,S,&rate[0],dt,&trans[0]);
   reulermultinom(2,E,&rate[2],dt,&trans[2]);
   reulermultinom(2,I,&rate[4],dt,&trans[4]);
+  reulermultinom(2,A,&rate[6],dt,&trans[6]);
 
   S += births   - trans[0] - trans[1];
   E += trans[0] - trans[2] - trans[3];
   I += trans[2] - trans[4] - trans[5];
-  R = pop - S - E - I;
+  A += trans[4] - trans[6] - trans[7];
+  R = pop - S - E - I - A;
   W += (dw - dt)/sigmaSE;  // standardized i.i.d. white noise
   C += trans[4];           // true incidence
 "))
 initlz <- Csnippet(stringr::str_interp("
   double pop = $[d]{pop};
-  double m = pop/(S_0+E_0+I_0+R_0);
+  double m = pop/(S_0+E_0+I_0+A_0+R_0);
   S = nearbyint(m*S_0);
   E = nearbyint(m*E_0);
   I = nearbyint(m*I_0);
+  A = nearbyint(m*A_0);
   R = nearbyint(m*R_0);
   W = 0;
   C = 0;
@@ -116,9 +125,9 @@ rmeas <- Csnippet("
   }
 ")
 times <- seq(from=1979, to=1995, by=1/52)
-paramnames <- c("R0","mu","sigma","gamma","alpha","iota",
+paramnames <- c("R0","mu","sigma","phi","gamma","alpha","iota",
                          "rho","sigmaSE","psi","cohort","amplitude",
-                         "S_0","E_0","I_0","R_0")
+                         "S_0","E_0","I_0","A_0","R_0")
 sir <- pomp(data = NULL, times = times, t0 = 2*times[1]-times[2],
             rprocess=euler(rproc,delta.t=1/365.25),
             rinit=initlz,
@@ -126,11 +135,26 @@ sir <- pomp(data = NULL, times = times, t0 = 2*times[1]-times[2],
             rmeasure=rmeas,
             obsnames = "cases",
             accumvars=c("C","W"),
-            statenames=c("S","E","I","R","C","W"),
+            statenames=c("S","E","I","A","R","C","W"),
             paramnames=paramnames)
+# I estimate phi as what was previously gamma (the original I to R rate) because
+# it's essentially 1 / (duration (in years) of the acute measles symptoms), or
+# say 1 year / 1.5 weeks ~ 30.4 (which is the He et al. 2010 MLE). I estimate
+# our new gamma as 1 / (duration of proposed amnesia) = 1/(2 years) = 1/2. Mina
+# et al. Science 2016 (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4823017/)
+# and https://www.nature.com/articles/s41467-018-07515-0 observe amnesia for at
+# least 2 years, which means we need the A compartment to last on average at
+# least 2 years; then, if we're modeling a country with low background of
+# infectious disease, we'll observe mortality due to amnesia spread out over the
+# 2 years; if we're modeling a country with high background of infectious
+# disease, we'll observe mortality due to amnesia more quickly than 2 years.
+# Then 2 years is a necessary lower bound on average duration in A. Relevant
+# quote from the Nature article: "The disease [measles] is associated with a
+# transient immune suppression and increased risk of childhood morbidity and
+# mortality for a period of more than 2 years."
 read.csv(text="
-town,loglik,loglik.sd,mu,delay,sigma,gamma,rho,R0,amplitude,alpha,iota,cohort,psi,S_0,E_0,I_0,R_0,sigmaSE
-London,-3804.9,0.16,0.02,4,28.9,30.4,0.488,56.8,0.554,0.976,2.9,0.557,0.116,0.0297,5.17e-05,5.14e-05,0.97,0.0878
+town,loglik,loglik.sd,mu,delay,sigma,phi,gamma,rho,R0,amplitude,alpha,iota,cohort,psi,S_0,E_0,I_0,A_0,R_0,sigmaSE
+London,-3804.9,0.16,0.02,4,28.9,30.4,0.5,0.488,56.8,0.554,0.976,2.9,0.557,0.116,0.0297,5.17e-05,5.14e-05,5e-05,0.97,0.0878
 ",stringsAsFactors=FALSE) -> mle
 mle %>% select(paramnames) %>% unlist() -> theta
 ```
