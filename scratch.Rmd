@@ -60,7 +60,7 @@ rproc <- Csnippet(stringr::str_interp("
       seas = 1.0-amplitude;
 
   // transmission rate
-  beta = R0*(phi+mu)*seas;
+  beta = R0*(gamma+mu)*seas;
   // expected force of infection
   foi = beta*pow(I+iota,alpha)/pop;
   // white noise (extrademographic stochasticity)
@@ -70,9 +70,9 @@ rproc <- Csnippet(stringr::str_interp("
   rate[1] = mu;             // natural S death
   rate[2] = sigma;        // rate of ending of latent stage
   rate[3] = mu;             // natural E death
-  rate[4] = phi;        // rate of entering immune amnesia
+  rate[4] = gamma;        // rate of entering immune amnesia
   rate[5] = mu;             // natural I death
-  rate[6] = gamma;             // recovery
+  rate[6] = phi;             // recovery
   rate[7] = mu;             // natural A death
 
   // Poisson births
@@ -125,7 +125,7 @@ rmeas <- Csnippet("
   }
 ")
 times <- seq(from=1979, to=1995, by=1/52)
-paramnames <- c("R0","mu","sigma","phi","gamma","alpha","iota",
+paramnames <- c("R0","mu","sigma","gamma","phi","alpha","iota",
                          "rho","sigmaSE","psi","cohort","amplitude",
                          "S_0","E_0","I_0","A_0","R_0")
 sir <- pomp(data = NULL, times = times, t0 = 2*times[1]-times[2],
@@ -137,10 +137,7 @@ sir <- pomp(data = NULL, times = times, t0 = 2*times[1]-times[2],
             accumvars=c("C","W"),
             statenames=c("S","E","I","A","R","C","W"),
             paramnames=paramnames)
-# I estimate phi as what was previously gamma (the original I to R rate) because
-# it's essentially 1 / (duration (in years) of the acute measles symptoms), or
-# say 1 year / 1.5 weeks ~ 30.4 (which is the He et al. 2010 MLE). I estimate
-# our new gamma as 1 / (duration of proposed amnesia) = 1/(2 years) = 1/2. Mina
+# I estimate phi as 1 / (duration of proposed amnesia) = 1/(2 years) = 1/2. Mina
 # et al. Science 2016 (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4823017/)
 # and https://www.nature.com/articles/s41467-018-07515-0 observe amnesia for at
 # least 2 years, which means we need the A compartment to last on average at
@@ -153,7 +150,7 @@ sir <- pomp(data = NULL, times = times, t0 = 2*times[1]-times[2],
 # transient immune suppression and increased risk of childhood morbidity and
 # mortality for a period of more than 2 years."
 read.csv(text="
-town,loglik,loglik.sd,mu,delay,sigma,phi,gamma,rho,R0,amplitude,alpha,iota,cohort,psi,S_0,E_0,I_0,A_0,R_0,sigmaSE
+town,loglik,loglik.sd,mu,delay,sigma,gamma,phi,rho,R0,amplitude,alpha,iota,cohort,psi,S_0,E_0,I_0,A_0,R_0,sigmaSE
 London,-3804.9,0.16,0.02,4,28.9,30.4,0.5,0.488,56.8,0.554,0.976,2.9,0.557,0.116,0.0297,5.17e-05,5.14e-05,5e-05,0.97,0.0878
 ",stringsAsFactors=FALSE) -> mle
 mle %>% select(paramnames) %>% unlist() -> theta
