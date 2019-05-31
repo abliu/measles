@@ -60,7 +60,7 @@ rproc <- Csnippet(stringr::str_interp("
       seas = 1.0-amplitude;
 
   // transmission rate
-  beta = R0*(gamma+mu)*seas;
+  beta = R0*(phi+mu)*seas;
   // expected force of infection
   foi = beta*pow(I+iota,alpha)/pop;
   // white noise (extrademographic stochasticity)
