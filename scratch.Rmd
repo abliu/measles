@@ -232,6 +232,6 @@ inc_mort %>% ggplot(aes(x=roll_S_I, y=roll_A_D)) +
   geom_point(size=0.01) +
   facet_wrap(~.id,ncol=3, labeller = as_labeller(function(id) {
     paste0("simulation ", id, ", r^2=", signif(r2s[as.integer(id)], 2)) })) +
-  xlab(paste0(signif(roll_S_I_len_yrs, 2), "-yr past mz incidence")) +
-  ylab(paste0(signif(roll_A_D_len_yrs, 2), "-yr future non-mz mortality"))
+  xlab(paste0(signif(roll_S_I_len_yrs, 2), "-yr mz incidence")) +
+  ylab(paste0("following ", signif(roll_A_D_len_yrs, 2), "-yr non-mz mortality"))
 ```
