@@ -14,6 +14,7 @@ library(pomp2)
 library(here)
 library(dplyr)
 library(ggplot2)
+library(zoo)
 ```
 
 ```{r}
@@ -84,6 +85,12 @@ rproc <- Csnippet(stringr::str_interp("
   S += births   - trans[0] - trans[1];
   I += trans[0] - trans[2] - trans[3];
   A += trans[2] - trans[4] - trans[5];
+  S_I += trans[0];
+  S_D += trans[1];
+  I_A += trans[2];
+  I_D += trans[3];
+  A_R += trans[4];
+  A_D += trans[5];
   R = pop - S - I - A;
   W += (dw - dt)/sigmaSE;  // standardized i.i.d. white noise
   C += trans[2];           // true incidence
@@ -95,6 +102,7 @@ initlz <- Csnippet(stringr::str_interp("
   I = nearbyint(m*I_0);
   A = nearbyint(m*A_0);
   R = nearbyint(m*R_0);
+  S_I = S_D = I_A = I_D = A_R = A_D = 0;
   W = 0;
   C = 0;
 "))
@@ -119,18 +127,20 @@ rmeas <- Csnippet("
     cases = 0.0;
   }
 ")
-times <- seq(from=1979, to=1995, by=1/365.25)
+sim_dt = 1/365.25
+times <- seq(from=1979, to=1995, by=sim_dt)
 paramnames <- c("R0","mu","sigma","gamma","phi","alpha","iota",
                          "rho","sigmaSE","psi","cohort","amplitude",
                          "S_0","I_0","A_0","R_0")
 sir <- pomp(data = NULL, times = times, t0 = 2*times[1]-times[2],
-            rprocess=euler(rproc,delta.t=1/365.25),
+            rprocess=euler(rproc,delta.t=sim_dt),
             rinit=initlz,
             dmeasure=dmeas,
             rmeasure=rmeas,
             obsnames = "cases",
-            accumvars=c("C","W"),
-            statenames=c("S","I","A","R","C","W"),
+            accumvars=c("C","W","S_I","S_D","I_A","I_D","A_R","A_D"),
+            statenames=c("S","I","A","R","C","W","S_I","S_D","I_A","I_D","A_R",
+                         "A_D"),
             paramnames=paramnames)
 # I estimate phi as 1 / (duration of proposed amnesia) = 1/(2 years) = 1/2. Mina
 # et al. Science 2016 (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4823017/)
@@ -171,4 +181,57 @@ sims %>%
   geom_line()+
   guides(color=FALSE)+
   facet_wrap(~.id,ncol=2)
+```
+
+```{r}
+# Find amnesia time length that best correlates past measles incidence with
+# current non-measles mortality.
+# First condense simulation dataframe into observations dataframe, where
+# observations are made only sparsely, e.g. every quarter-year vs. everyday.
+obs_period_len = 0.25
+obs = sims %>%
+  mutate(end_obs_period = ceiling(time/obs_period_len) * obs_period_len) %>%
+  select(-time) %>%
+  group_by(.id, end_obs_period) %>%
+  group_by(n_sim = n(), add = TRUE) %>%
+  summarise_all(sum) %>%
+  filter(n_sim > 1) # throw out periods that don't span full obs_period_len
+
+# Compute rolling windows of measles incidence and non-measles mortality to
+# estimate immunomodulated and non-measles mortality populations.
+roll_S_I_len_yrs = 4 * obs_period_len
+roll_A_D_len_yrs = 2 * obs_period_len
+roll_S_I_len_obs = floor(roll_S_I_len_yrs/obs_period_len)
+roll_A_D_len_obs = floor(roll_A_D_len_yrs/obs_period_len)
+inc_mort = obs %>% group_by(.id) %>%
+  group_modify(~ .x %>%
+                 transmute(roll_S_I = c(rep(NA, roll_S_I_len_obs-1),
+                                        rollsum(.x %>% select(S_I),
+                                                roll_S_I_len_obs)),
+                           # this indexing ensures period in which mortality is
+                           # counted doesn't overlap with period in which past
+                           # incidence enters counted immunomodulated population
+                           roll_A_D = c(rollsum(.x %>% select(A_D),
+                                                roll_A_D_len_obs)[-1],
+                                        rep(NA, roll_A_D_len_obs)),
+                           S_I_s = end_obs_period - roll_S_I_len_yrs,
+                           S_I_e = end_obs_period,
+                           A_D_s = end_obs_period,
+                           A_D_e = end_obs_period + roll_A_D_len_yrs
+                           )) %>%
+  filter(row_number() %% roll_A_D_len_obs == 0) %>% # mortality window
+  na.omit()
+
+# Compute r^2s between immunomodulated and non-measles mortality populations.
+r2s = inc_mort %>%
+  group_by(.id) %>%
+  group_map(~ cor(.x$roll_S_I, .x$roll_A_D)^2) %>% unlist()
+
+# Scatter plot immunomodulated and non-measles mortality populations.
+inc_mort %>% ggplot(aes(x=roll_S_I, y=roll_A_D)) +
+  geom_point(size=0.01) +
+  facet_wrap(~.id,ncol=3, labeller = as_labeller(function(id) {
+    paste0("simulation ", id, ", r^2=", signif(r2s[as.integer(id)], 2)) })) +
+  xlab(paste0(signif(roll_S_I_len_yrs, 2), "-yr past mz incidence")) +
+  ylab(paste0(signif(roll_A_D_len_yrs, 2), "-yr future non-mz mortality"))
 ```
