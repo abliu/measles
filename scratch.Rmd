@@ -154,14 +154,16 @@ sir <- pomp(data = NULL, times = times, t0 = 2*times[1]-times[2],
 # quote from the Nature article: "The disease [measles] is associated with a
 # transient immune suppression and increased risk of childhood morbidity and
 # mortality for a period of more than 2 years."
-mle = c(town='London',
-        loglik=-3804.9,
+mu = 0.02
+# These are estimated for London in He, Ionides, & King, J. R. Soc. Interface
+# (2010).
+mle = c(loglik=-3804.9,
         loglik.sd=0.16,
-        mu=0.02,
+        mu=mu,
         delay=4,
         sigma=28.9,
         gamma=30.4,
-        phi=0.5,
+        phi=5*mu,
         rho=0.488,
         R0=56.8,
         amplitude=0.554,
@@ -174,8 +176,9 @@ mle = c(town='London',
         I_0=5.14e-05,
         A_0=5e-05,
         R_0=0.97,
-        sigmaSE=0.0878,
+        sigmaSE=0.0878
 )
+mle[paramnames] -> theta
 ```
 
 ```{r}
@@ -254,17 +257,19 @@ compute_inc_mort_r2s = function(obs, roll_S_I_len_yrs, roll_A_D_len_yrs) {
 }
 
 roll_S_I_lens_yrs = 1:16 * obs_period_len
-roll_A_D_len_yrs = 4 * obs_period_len
+roll_A_D_len_yrs = 1 * obs_period_len
 inc_mort_r2s = purrr::map(roll_S_I_lens_yrs, function(roll_S_I_len_yrs) {
   compute_inc_mort_r2s(obs, roll_S_I_len_yrs, roll_A_D_len_yrs)
 }) %>% setNames(roll_S_I_lens_yrs)
 
 # Scatter plot immunomodulated and non-measles mortality populations.
-inc_mort_r2s[[12]]$inc_mort %>% ggplot(aes(x=mz_immunomodulated, y=non_mz_mort)) +
+inc_mort_r2s[[12]]$inc_mort %>% ggplot(aes(x=mz_immunomodulated/1000.,
+                                           y=non_mz_mort/1000.)) +
   geom_point(size=0.1) +
   facet_wrap(~simulation_params+.id) +
-  xlab(paste0(signif(roll_S_I_lens_yrs[12], 2), "-yr mz incidence")) +
-  ylab(paste0("following ", signif(roll_A_D_len_yrs, 2), "-yr non-mz mortality"))
+  xlab(paste0(signif(roll_S_I_lens_yrs[12], 2), "-yr mz incidence (1000s)")) +
+  ylab(paste0("following ", signif(roll_A_D_len_yrs, 2),
+              "-yr non-mz mortality (1000s)"))
 ```
 
 ```{r}
