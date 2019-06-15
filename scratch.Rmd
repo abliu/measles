@@ -175,12 +175,17 @@ sir %>%
   simulate(params=theta,
            # can make N adj w/ time
            # change nsim back to 20
-           nsim=10,format="data.frame", seed = 96) -> sims
+           nsim=10,format="data.frame", seed = 96) -> sims1
+sir %>%
+  simulate(params=theta %>% replace('mu', 0.1),
+           nsim=10,format="data.frame", seed = 96) -> sims2
+# Name simulations here.
+sims = bind_rows(`mu=0.02`=sims1, `mu=0.1`=sims2, .id = 'simulation_params')
 sims %>%
-  ggplot(aes(x=time,y=cases,group=.id,color=.id=="data"))+
+  ggplot(aes(x=time,y=cases))+
   geom_line()+
   guides(color=FALSE)+
-  facet_wrap(~.id,ncol=2)
+  facet_wrap(~simulation_params+.id)
 ```
 
 ```{r}
@@ -192,7 +197,7 @@ obs_period_len = 0.25
 obs = sims %>%
   mutate(end_obs_period = ceiling(time/obs_period_len) * obs_period_len) %>%
   select(-time) %>%
-  group_by(.id, end_obs_period) %>%
+  group_by(simulation_params, .id, end_obs_period) %>%
   group_by(n_sim = n(), add = TRUE) %>%
   summarise_all(sum) %>%
   filter(n_sim > 1) # throw out periods that don't span full obs_period_len
@@ -202,7 +207,7 @@ compute_inc_mort_r2s = function(obs, roll_S_I_len_yrs, roll_A_D_len_yrs) {
   # estimate immunomodulated and non-measles mortality populations.
   roll_S_I_len_obs = floor(roll_S_I_len_yrs/obs_period_len)
   roll_A_D_len_obs = floor(roll_A_D_len_yrs/obs_period_len)
-  inc_mort = obs %>% group_by(.id) %>%
+  inc_mort = obs %>% group_by(simulation_params, .id) %>%
     group_modify(~ .x %>%
                    transmute(mz_immunomodulated = c(rep(NA, roll_S_I_len_obs-1),
                                           rollsum(.x %>% select(S_I),
@@ -226,8 +231,8 @@ compute_inc_mort_r2s = function(obs, roll_S_I_len_yrs, roll_A_D_len_yrs) {
     na.omit()
   # Compute r^2s between immunomodulated and non-measles mortality populations.
   r2s = inc_mort %>%
-    group_by(.id) %>%
-    group_map(~ cor(.x$mz_immunomodulated, .x$non_mz_mort)^2) %>% unlist()
+    group_by(simulation_params, .id) %>%
+    summarise(r2 = cor(mz_immunomodulated, non_mz_mort)^2)
   return(list(inc_mort=inc_mort, r2s=r2s))
 }
 
@@ -240,23 +245,21 @@ inc_mort_r2s = purrr::map(roll_S_I_lens_yrs, function(roll_S_I_len_yrs) {
 # Scatter plot immunomodulated and non-measles mortality populations.
 inc_mort_r2s[[12]]$inc_mort %>% ggplot(aes(x=mz_immunomodulated, y=non_mz_mort)) +
   geom_point(size=0.1) +
-  facet_wrap(~.id,ncol=3, labeller = as_labeller(function(id) {
-    paste0("simulation ", id, ", r^2=",
-           signif(inc_mort_r2s[[12]]$r2s[as.integer(id)], 2)) })) +
+  facet_wrap(~simulation_params+.id) +
   xlab(paste0(signif(roll_S_I_lens_yrs[12], 2), "-yr mz incidence")) +
   ylab(paste0("following ", signif(roll_A_D_len_yrs, 2), "-yr non-mz mortality"))
 ```
 
 ```{r}
 # Plot mz incidence-non mz mortality correlations vs. time periods covering
-# immunomodulated populations.
-r2s = bind_rows(inc_mort_r2s %>% purrr::map('r2s')) %>%
-  tidyr::gather(key = "roll_S_I_len_yrs", value = "r2") %>%
-  mutate(roll_S_I_len_yrs = as.numeric(roll_S_I_len_yrs))
-r2_medians = r2s %>% group_by(roll_S_I_len_yrs) %>%
+# immunomodulated populations. First combine the r2 dataframes and calculate
+# medians across random simulations, within simulation params:
+r2s = bind_rows(inc_mort_r2s %>% purrr::map('r2s'), .id = 'roll_S_I_len_yrs')
+r2_medians = r2s %>% group_by(simulation_params, roll_S_I_len_yrs) %>%
   summarise(r2 = median(r2))
-
-ggplot(mapping = aes(x=roll_S_I_len_yrs, y=r2)) +
+# Plot them.
+ggplot(mapping = aes(x=roll_S_I_len_yrs, y=r2, group=simulation_params)) +
   geom_point(data=r2s, size=0.01) +
-  geom_line(data=r2_medians)
+  geom_line(data=r2_medians) +
+  facet_wrap(~simulation_params, ncol = 1)
 ```
