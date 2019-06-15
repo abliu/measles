@@ -154,11 +154,28 @@ sir <- pomp(data = NULL, times = times, t0 = 2*times[1]-times[2],
 # quote from the Nature article: "The disease [measles] is associated with a
 # transient immune suppression and increased risk of childhood morbidity and
 # mortality for a period of more than 2 years."
-read.csv(text="
-town,loglik,loglik.sd,mu,delay,sigma,gamma,phi,rho,R0,amplitude,alpha,iota,cohort,psi,S_0,E_0,I_0,A_0,R_0,sigmaSE
-London,-3804.9,0.16,0.02,4,28.9,30.4,0.5,0.488,56.8,0.554,0.976,2.9,0.557,0.116,0.0297,5.17e-05,5.14e-05,5e-05,0.97,0.0878
-",stringsAsFactors=FALSE) -> mle
-mle %>% select(paramnames) %>% unlist() -> theta
+mle = c(town='London',
+        loglik=-3804.9,
+        loglik.sd=0.16,
+        mu=0.02,
+        delay=4,
+        sigma=28.9,
+        gamma=30.4,
+        phi=0.5,
+        rho=0.488,
+        R0=56.8,
+        amplitude=0.554,
+        alpha=0.976,
+        iota=2.9,
+        cohort=0.557,
+        psi=0.116,
+        S_0=0.0297,
+        E_0=5.17e-05,
+        I_0=5.14e-05,
+        A_0=5e-05,
+        R_0=0.97,
+        sigmaSE=0.0878,
+)
 ```
 
 ```{r}
