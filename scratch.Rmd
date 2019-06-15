@@ -70,9 +70,9 @@ rproc <- Csnippet(stringr::str_interp("
   rate[0] = foi*dw/dt;  // stochastic force of infection
   rate[1] = mu;             // natural S death
   rate[2] = gamma;        // rate of entering immune amnesia
-  rate[3] = mu;             // natural I death
+  rate[3] = 100 * mu;             // natural I death
   rate[4] = phi;             // recovery
-  rate[5] = mu;             // natural A death
+  rate[5] = 10 * mu;             // natural A death
 
   // Poisson births
   births = rpois(br*dt);
