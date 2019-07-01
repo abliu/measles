@@ -230,9 +230,11 @@ sir %>%
 sims = bind_rows(`beta_i=52,phi=0.1`=sims1, `beta_i=13,phi=0.1`=sims2,
                  .id = 'simulation_params')
 sims %>%
-  ggplot(aes(x=time,y=cases))+
-  geom_line()+
-  guides(color=FALSE)+
+  ggplot()+
+  geom_line(mapping = aes(x=time,y=cases))+
+  geom_line(mapping = aes(x=time,y=300*nonmz_D), alpha=0.4)+
+  scale_y_continuous(sec.axis = sec_axis(~ . *1/300.,
+                                         name = "non-mz deaths"))+
   facet_wrap(~simulation_params+.id)
 ```
 
